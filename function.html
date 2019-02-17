@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8n">
+	<meta name="Description" CONTENT="ここにページのディスクリプション">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="Haruki Kawashita">
+	<!--Setting ogp-->
+	<meta property="og:title" content="ここにタイトル" >
+	<meta property="og:type" content="ここにタイプ" >
+	<meta property="og:url" content="ここにページのURL" >
+	<meta property="og:image" content="ここにサムネイル画像のURL" >
+	<meta property="og:site_name" content="ここにサイト名" >
+	<meta property="og:description" content="ここにページのディスクリプション" >
+	<!--Facebook ogp-->
+	<meta property="fb:app_id" content="App-ID（15文字の半角数字）" >
+	<!--Twitter cards-->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="@Twitterアカウント">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>TITLE</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,900" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+	<!-- code-prettify -->
+	<script type="text/javascript" src="./lib/js/prettify.js"></script>
+	<link href="./lib/css/prettify.css" type="text/css" rel="stylesheet">
+	
+	<!-- iota -->
+	<link rel="stylesheet" href="./lib/css/iota.css" />
+
+	<link rel="stylesheet" href="./style.css" />
+</head>
+<body onload="prettyPrint()">
+	<nav role="navigation" id="globalNavi" class="grid inline-center navbar_wrapper sticky">
+		<a href="../" rel="home" class="flex navbar_brand">
+			<span class="navbar_logo">
+				LO<br>GO
+			</span>
+		</a>        
+		<button type="button" id="navbarToggler" class="navbar_toggler">
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
+		<ul class="navbar_list font-sm">
+			<li><a class="navbar_link"href="./index.html">home</a></li>
+			<li><a class="navbar_link"href="./naming.html">命名規則</a></li>
+			<li><a class="navbar_link"href="./components/flow.html">全体の流れ</a></li>
+			<li><a class="navbar_link"href="./components/function.html">function</a></li>
+			<li><a class="navbar_link"href="./components/plugin.html">plugin</a></li>
+			<li><a class="navbar_link"href="./components/index.html">コンポーネント</a></li>
+		</ul>
+	</nav>
+	<div class="grid body_wrapper">
+		<aside role="complementary" class="sidebar_wrapper">
+		</aside>
+		<aside role="complementary" class="sidebar_wrapper"></aside>
+		<main role="main">
+			<pre><code class="prettyprint linenums"><math><![CDATA[
+	        <div>a</div>
+	    ]]></math></code></pre>
+			<pre><code class="prettyprint linenums">
+			.elem {
+			  font-size: 16px;
+			}
+			</code></pre>
+			<pre><code class="prettyprint linenums lang-css">
+			.elem {
+			  font-size: 16px;
+			}
+			</code></pre>
+		</main>
+		<footer role="contentinfo" class="inline-center footer_wrapper">@2019~ haruki kawashita</footer>
+	</div>
+	<script type='text/javascript' src='./lib/js/main.js'></script>
+</body>
+</html>
