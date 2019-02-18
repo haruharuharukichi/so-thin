@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>My New Hugo Site</title>
-    <link>http://example.org/</link>
+    <link>https://haruharuharukichi.github.io/so-thin/</link>
     <description>Recent content on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 17 Feb 2019 18:46:12 +0900</lastBuildDate>
     
-	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://haruharuharukichi.github.io/so-thin/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Components</title>
-      <link>http://example.org/components/</link>
+      <link>https://haruharuharukichi.github.io/so-thin/components/</link>
       <pubDate>Sun, 17 Feb 2019 18:46:12 +0900</pubDate>
       
-      <guid>http://example.org/components/</guid>
+      <guid>https://haruharuharukichi.github.io/so-thin/components/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Plugin</title>
-      <link>http://example.org/plugin/</link>
+      <link>https://haruharuharukichi.github.io/so-thin/plugin/</link>
       <pubDate>Sun, 17 Feb 2019 18:33:01 +0900</pubDate>
       
-      <guid>http://example.org/plugin/</guid>
+      <guid>https://haruharuharukichi.github.io/so-thin/plugin/</guid>
       <description>必須プラグイン All in one SEO Pack
 WP fastest cache
 EWWW Image Optimizer
@@ -36,19 +36,19 @@ CF7 Smart Grid Design Extension</description>
     
     <item>
       <title>Function</title>
-      <link>http://example.org/function/</link>
+      <link>https://haruharuharukichi.github.io/so-thin/function/</link>
       <pubDate>Sun, 17 Feb 2019 18:32:51 +0900</pubDate>
       
-      <guid>http://example.org/function/</guid>
+      <guid>https://haruharuharukichi.github.io/so-thin/function/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Flow</title>
-      <link>http://example.org/flow/</link>
+      <link>https://haruharuharukichi.github.io/so-thin/flow/</link>
       <pubDate>Sun, 17 Feb 2019 18:32:32 +0900</pubDate>
       
-      <guid>http://example.org/flow/</guid>
+      <guid>https://haruharuharukichi.github.io/so-thin/flow/</guid>
       <description>制作の流れ 営業請負会社担当 受注 営業代行会社が案件をとってきます。クライアント名・大まかなボリューム・金額がこちらに伝えられ制作担当者を決めます
 ヒアリング どのようなサイトを希望しているのかを代行会社がヒアリングし、その内容と画像などがGoogleドライブにシェアされます。その後クライアントをチャットワークに誘導してくれます
 自社担当 チャットワーク連絡 チャットワークにクライアントから連絡が来たら接続・概要を確認
@@ -66,10 +66,10 @@ SSL導入 必要に応じてSSLを導入
     
     <item>
       <title>Naming</title>
-      <link>http://example.org/naming/</link>
+      <link>https://haruharuharukichi.github.io/so-thin/naming/</link>
       <pubDate>Sun, 17 Feb 2019 17:23:51 +0900</pubDate>
       
-      <guid>http://example.org/naming/</guid>
+      <guid>https://haruharuharukichi.github.io/so-thin/naming/</guid>
       <description>BEMカスタム命名規則 クラス名 メインクラス  Blockはセクション名+_wrapper(Block単体ではなく、Block_elementのように扱う) Blockは量産せず、なるべく少ないブロック数でコーディングする Block名はHTML5のタグ名をベースにした物を使う BlockとElementはスネークケースで繋ぐ Modifierは単語 Modifier単体では使わない Block名等が2単語以上からなる場合はキャメルケースで繋ぐ 組み合わせが限定される場合はセレクターでの指定を許可する(ul→li,.btn→spanなど) Elementの中のElementはどちらもBlockの直接の子要素として考える 例外として、card,post等の多用する、かつ他との差別化が必要になる要素名の場合は親Elementをブロックとして考える card等の種類の識別にはModifierを使用する 必要に応じてsectionにidを設定する Block名等が2単語以上からなる場合はキャメルケースで繋ぐ  グローバルクラス（特殊クラス）  メインクラスの補助としてグローバルクラスを導入しても良い JSにクラスを使う場合、一般的な装飾を行う場合はグローバルクラスとして扱う JSにクラスを使う場合は先頭を大文字に グローバルクラスにBEMの概念は使用しない 基本的にグローバルクラスは単語で使用する グローバルクラスの接続が必要な場合はケバブケース(ハイフン)を使う Block名等が2単語以上からなる場合はキャメルケースで繋ぐ 記述はグローバルクラス→メインクラスの順（一般的な設定→細かい設定の順）  サンプル 名前使用例 メインクラス Block
  navbar header main sidebar footer  Element
  inner content item header img body title description text  Modifier
