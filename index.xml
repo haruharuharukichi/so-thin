@@ -6,18 +6,87 @@
     <description>Recent content on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 17 Feb 2019 18:46:12 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 17 Feb 2019 18:47:18 +0900</lastBuildDate>
     
 	<atom:link href="https://haruharuharukichi.github.io/so-thin/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Components</title>
-      <link>https://haruharuharukichi.github.io/so-thin/components/</link>
-      <pubDate>Sun, 17 Feb 2019 18:46:12 +0900</pubDate>
+      <title>Table</title>
+      <link>https://haruharuharukichi.github.io/so-thin/components/table/</link>
+      <pubDate>Sun, 17 Feb 2019 18:47:18 +0900</pubDate>
       
-      <guid>https://haruharuharukichi.github.io/so-thin/components/</guid>
+      <guid>https://haruharuharukichi.github.io/so-thin/components/table/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Navigation</title>
+      <link>https://haruharuharukichi.github.io/so-thin/components/navigation/</link>
+      <pubDate>Sun, 17 Feb 2019 18:47:06 +0900</pubDate>
+      
+      <guid>https://haruharuharukichi.github.io/so-thin/components/navigation/</guid>
+      <description>PHPベーシックコード + header.php
+```php &#39;; } ?     &#39;Navigation&#39;, &#39;menu_class&#39; =&#39;navbar_list&#39;, &#39;container&#39; =false, &#39;items_wrap&#39; =&#39;%3$s&#39;)); ?  ``` function.php
+```php //navigationの登録 register_nav_menu( &#39;Navigation&#39;, &#39;ナビゲーション&#39; ); //カスタムロゴ追加 add_theme_support( &#39;custom-logo&#39;, array( &#39;size&#39; = &#39;raindrops-logo&#39; ) ); //ナビゲーションのアンカータグにクラスを追加 function add_menuclass($ulclass) { return preg_replace(&#39;/current == true ) { $classes[] = &#39;current&#39;; } return $classes; } ```   オーソドックスタイプ ノーマル See the Pen XOMjEx by haruharuharukichi (@haruharuharukichi) on CodePen.   sticky See the Pen davOEz by haruharuharukichi (@haruharuharukichi) on CodePen.</description>
+    </item>
+    
+    <item>
+      <title>Link</title>
+      <link>https://haruharuharukichi.github.io/so-thin/components/link/</link>
+      <pubDate>Sun, 17 Feb 2019 18:47:00 +0900</pubDate>
+      
+      <guid>https://haruharuharukichi.github.io/so-thin/components/link/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Header</title>
+      <link>https://haruharuharukichi.github.io/so-thin/components/header/</link>
+      <pubDate>Sun, 17 Feb 2019 18:46:52 +0900</pubDate>
+      
+      <guid>https://haruharuharukichi.github.io/so-thin/components/header/</guid>
+      <description>Header PHPベーシックコード + header.php
+ ```php &amp;lt;header role=&amp;quot;banner&amp;quot; class=&amp;quot;flex header_wrapper&amp;quot; style=&amp;quot;background-image:url(&amp;lt;?php header_image(); ?&amp;gt;);&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;header_content&amp;quot;&amp;gt; &amp;lt;h1 class=&amp;quot;header_title&amp;quot;&amp;gt; &amp;lt;?php if(is_home()){ bloginfo( &#39;name&#39; ); ?&amp;gt;&amp;lt;/h1&amp;gt; &amp;lt;p class=&amp;quot;header_descripiton&amp;quot;&amp;gt;&amp;lt;?php bloginfo( &#39;description&#39; ); ?&amp;gt;&amp;lt;/p&amp;gt; &amp;lt;?php }else{ if(is_single()){ $category = get_the_category($post-&amp;gt;ID); echo $category[0]-&amp;gt;cat_name; }elseif(is_page()){ the_title(); }elseif(is_archive()){ ?&amp;gt; archive &amp;lt;?php }elseif (is_search()) { ?&amp;gt; search &amp;lt;?php }elseif (is_404()) { ?&amp;gt; not found &amp;lt;?php }else{ the_title(); } ?&amp;gt; &amp;lt;/h1&amp;gt; &amp;lt;?php } ?&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/header&amp;gt; ```  function.php
+//カスタムヘッダー追加 add_theme_support( &#39;custom-header&#39; );     オーソドックスタイプ ノーマル See the Pen headerBasic by haruharuharukichi (@haruharuharukichi) on CodePen.</description>
+    </item>
+    
+    <item>
+      <title>Grid</title>
+      <link>https://haruharuharukichi.github.io/so-thin/components/grid/</link>
+      <pubDate>Sun, 17 Feb 2019 18:46:46 +0900</pubDate>
+      
+      <guid>https://haruharuharukichi.github.io/so-thin/components/grid/</guid>
+      <description>Grid 2分割 See the Pen vbmmbm by haruharuharukichi (@haruharuharukichi) on CodePen.   3分割 See the Pen LqyaBz by haruharuharukichi (@haruharuharukichi) on CodePen.   4分割 See the Pen Grid-4 by haruharuharukichi (@haruharuharukichi) on CodePen.   流動型 See the Pen Grid-List by haruharuharukichi (@haruharuharukichi) on CodePen.</description>
+    </item>
+    
+    <item>
+      <title>Form</title>
+      <link>https://haruharuharukichi.github.io/so-thin/components/form/</link>
+      <pubDate>Sun, 17 Feb 2019 18:46:41 +0900</pubDate>
+      
+      <guid>https://haruharuharukichi.github.io/so-thin/components/form/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Card</title>
+      <link>https://haruharuharukichi.github.io/so-thin/components/card/</link>
+      <pubDate>Sun, 17 Feb 2019 18:46:34 +0900</pubDate>
+      
+      <guid>https://haruharuharukichi.github.io/so-thin/components/card/</guid>
+      <description>Card 共通CSS +  ```css position: relative; width: 100%; background-color:var(--base-color); } .main_card.grid{ grid-gap: 0; grid-template-columns: 1fr; grid-template-rows: 40% 60%; align-items: center; } .card_title{ margin: 0; } .card_img{ display:block; width: 100%; object-fit: cover; } .card_icon{ max-width:100%; max-height:100%; padding: 1rem; object-fit:contain; } .card_header{ position:relative; width: 100%; padding: 1rem; background-color: var(--main-color); color: var(--base-color); } .main_card.grid .card_header{ height:100%; } .card_header .card_title{ width: 100%; margin: 0; } .card_body{ position:relative; width: 100%; padding: 1rem; } .card_description{ position:absolute; top:0; left:0; margin:0; } .</description>
+    </item>
+    
+    <item>
+      <title>Button</title>
+      <link>https://haruharuharukichi.github.io/so-thin/components/button/</link>
+      <pubDate>Sun, 17 Feb 2019 18:46:28 +0900</pubDate>
+      
+      <guid>https://haruharuharukichi.github.io/so-thin/components/button/</guid>
+      <description>Button 共通HTML,CSS + html
+rel,_btnの前は任意で変更
+&amp;lt;a href=&amp;quot;#&amp;quot; type=&amp;quot;button&amp;quot; rel=&amp;quot;&amp;quot; class=&amp;quot;_btn&amp;quot;&amp;gt;&amp;lt;span&amp;gt;more&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt;   &amp;lt;p&amp;gt;css&amp;lt;/p&amp;gt;  [class*=&amp;quot;_btn&amp;quot;],[class*=&amp;quot;_btn&amp;quot;]:hover{ display:inline-block; padding:.5rem; margin:.25rem; color: var(--font-color); text-align:center; text-decoration: none; transition:.3s; } [class*=&amp;quot;_btn&amp;quot;]:hover{ }   &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;h2 class=&amp;quot;main_title&amp;quot;&amp;gt;オーソドックスタイプ&amp;lt;/h2&amp;gt; &amp;lt;div class=&amp;quot;main_code&amp;quot;&amp;gt; &amp;lt;p class=&amp;quot;codepen&amp;quot; data-height=&amp;quot;265&amp;quot; data-theme-id=&amp;quot;0&amp;quot; data-default-tab=&amp;quot;css,result&amp;quot; data-user=&amp;quot;haruharuharukichi&amp;quot; data-slug-hash=&amp;quot;KJvQRy&amp;quot; style=&amp;quot;height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;&amp;quot; data-pen-title=&amp;quot;Button&amp;quot;&amp;gt; &amp;lt;span&amp;gt;See the Pen &amp;lt;a href=&amp;quot;https://codepen.io/haruharuharukichi/pen/KJvQRy/&amp;quot;&amp;gt; Button&amp;lt;/a&amp;gt; by haruharuharukichi (&amp;lt;a href=&amp;quot;https://codepen.</description>
     </item>
     
     <item>

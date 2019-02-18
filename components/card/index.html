@@ -99,35 +99,99 @@
     <div id="toc"></div>
 </aside>
 <main role="main">
-    <p><h1 class="main_title">制作の流れ</h1>
-<h2>営業請負会社担当</h2>
-<h3>受注</h3>
-<p>営業代行会社が案件をとってきます。クライアント名・大まかなボリューム・金額がこちらに伝えられ制作担当者を決めます</p>
-<h3>ヒアリング</h3>
-<p>どのようなサイトを希望しているのかを代行会社がヒアリングし、その内容と画像などがGoogleドライブにシェアされます。その後クライアントをチャットワークに誘導してくれます</p>
-<h2>自社担当</h2>
-<h3>チャットワーク連絡</h3>
-<p>チャットワークにクライアントから連絡が来たら接続・概要を確認</p>
-<h3>トップページデザイン</h3>
-<p>サイトにあったテンプレートを選定し、トップページ（ホームページ）をHTMLでコーディング</p>
-<h3>トップページ確認</h3>
-<p>githubページでトップページをクライアントに共有、変更希望があれば変更し共有</p>
-<h3>全体デザイン</h3>
-<p>トップページと同じように全体をコーディング。今後はローカルのWordPressでテーマごと編集</p>
-<h3>全体確認</h3>
-<p>ローカルのWordPressブラウザ出力結果をそれぞれHTMLとして保存し、githubページに追加し共有、変更希望があれば変更し共有</p>
-<h3>WordPress導入</h3>
-<p>サーバー情報を貰いコントロールパネルからログインし、WordPressを導入、メンテナンスモードを有効化。リニューアルの場合は飛ばす</p>
-<h3>SSL導入</h3>
-<p>必要に応じてSSLを導入</p>
-<h3>ページ構築</h3>
-<p>作成したテーマをWordPressにアップロードし、ページなどを構築</p>
-<h3>プラグイン導入</h3>
-<p>必要なプラグインを導入し設定</p>
-<h3>確認</h3>
-<p>クライアントにWordPressのログイン情報を伝え、確認して貰う。変更希望があれば変更し共有</p>
-<h3>納品完了</h3>
-<p>問題なければ終了。終了報告をし、作成したテーマをGoogleドライブにアップロード</p></p>
+    <p><h1 class="main_title">Card</h1>
+<div class="main_code">
+    <h2>共通CSS</h2>
+    <div class="grid code_content">
+        <input type="checkbox" name="accordion" id="cardCss">
+        <label for="cardCss" style="grid-column: 2;">+</label>
+        <div class="code_item"></p>
+
+<pre><code>        ```css
+            position: relative;
+            width: 100%;
+            background-color:var(--base-color);
+        }
+        .main_card.grid{
+            grid-gap: 0;
+                grid-template-columns: 1fr;
+                grid-template-rows: 40% 60%;
+                align-items: center;
+        }
+        .card_title{
+            margin: 0;
+        }
+        .card_img{
+            display:block;
+            width: 100%;
+            object-fit: cover;
+        }
+        .card_icon{
+            max-width:100%;
+            max-height:100%;
+            padding: 1rem;
+            object-fit:contain;
+        }
+        .card_header{
+            position:relative;
+            width: 100%;
+            padding: 1rem;
+            background-color: var(--main-color);
+            color: var(--base-color);
+        }
+        .main_card.grid .card_header{
+            height:100%;
+        }
+        .card_header .card_title{
+            width: 100%;
+            margin: 0;
+        }
+        .card_body{
+            position:relative;
+            width: 100%;
+            padding: 1rem;
+        }
+        .card_description{
+            position:absolute;
+            top:0;
+            left:0;
+            margin:0;
+        }
+        .card_text{
+            margin: 0;
+            margin-bottom: 1rem;
+        }
+        .card_btn{
+            display: block;
+            padding: .5rem;
+        }
+        .card_btn.flex{
+            display:flex;
+            }
+        ```
+</code></pre>
+
+<p></div>
+</div>
+</div>
+<h2 class="main_title">オーソドックスタイプ</h2>
+<div class="main_code">
+    <p class="codepen" data-height="265" data-theme-id="0" data-default-tab="css,result" data-user="haruharuharukichi" data-slug-hash="zewXER" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;" data-pen-title="CardBasic">
+        <span>See the Pen <a href="https://codepen.io/haruharuharukichi/pen/zewXER/">
+        CardBasic</a> by haruharuharukichi (<a href="https://codepen.io/haruharuharukichi">@haruharuharukichi</a>)
+        on <a href="https://codepen.io">CodePen</a>.</span>
+    </p>
+    <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+</div>
+<h2 class="main_title">正方形タイプ</h2>
+<div class="main_code">
+    <p class="codepen" data-height="500" data-theme-id="0" data-default-tab="css,result" data-user="haruharuharukichi" data-slug-hash="LqyoVK" style="height: 500px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;" data-pen-title="CardSquare">
+        <span>See the Pen <a href="https://codepen.io/haruharuharukichi/pen/LqyoVK/">
+        CardSquare</a> by haruharuharukichi (<a href="https://codepen.io/haruharuharukichi">@haruharuharukichi</a>)
+        on <a href="https://codepen.io">CodePen</a>.</span>
+    </p>
+    <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+</div></p>
 
 </main>
 <footer role="contentinfo" class="inline-center footer_wrapper">@2019~ haruki kawashita</footer>
