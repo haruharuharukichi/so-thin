@@ -26,9 +26,8 @@
       <pubDate>Sun, 17 Feb 2019 18:47:06 +0900</pubDate>
       
       <guid>https://haruharuharukichi.github.io/so-thin/components/navigation/</guid>
-      <description>PHPベーシックコード + header.php
-```php &#39;; } ?     &#39;Navigation&#39;, &#39;menu_class&#39; =&#39;navbar_list&#39;, &#39;container&#39; =false, &#39;items_wrap&#39; =&#39;%3$s&#39;)); ?  ``` function.php
-```php //navigationの登録 register_nav_menu( &#39;Navigation&#39;, &#39;ナビゲーション&#39; ); //カスタムロゴ追加 add_theme_support( &#39;custom-logo&#39;, array( &#39;size&#39; = &#39;raindrops-logo&#39; ) ); //ナビゲーションのアンカータグにクラスを追加 function add_menuclass($ulclass) { return preg_replace(&#39;/current == true ) { $classes[] = &#39;current&#39;; } return $classes; } ```   オーソドックスタイプ ノーマル See the Pen XOMjEx by haruharuharukichi (@haruharuharukichi) on CodePen.   sticky See the Pen davOEz by haruharuharukichi (@haruharuharukichi) on CodePen.</description>
+      <description>Navigation PHPベーシックコード + header.php
+&amp;lt;nav role=&amp;quot;navigation&amp;quot; id=&amp;quot;navbar&amp;quot; class=&amp;quot;grid container navbar_wrapper&amp;quot;&amp;gt; &amp;lt;?php if ( function_exists( &#39;the_custom_logo&#39; ) ) { $custom_logo_id = get_theme_mod( &#39;custom_logo&#39; ); $custom_logo_url = wp_get_attachment_image_url( $custom_logo_id , &#39;full&#39; ); echo &#39;&amp;lt;a class=&amp;quot;flex navbar_brand&amp;quot; href=&amp;quot;&#39; . esc_url( home_url() ) . &#39;&amp;quot; rel=&amp;quot;home&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;navbar_logo&amp;quot; style=&amp;quot;background-image:url(&#39; . esc_url( $custom_logo_url ) . &#39;);&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt;&#39;; } ?&amp;gt; &amp;lt;button class=&amp;quot;navbar_toggler&amp;quot; id=&amp;quot;navbarToggler&amp;quot; type=&amp;quot;button&amp;quot;&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/button&amp;gt; &amp;lt;?php wp_nav_menu( array( &#39;theme_location&#39;=&amp;gt;&#39;Navigation&#39;, &#39;menu_class&#39; =&amp;gt;&#39;navbar_list&#39;, &#39;container&#39; =&amp;gt;false, &#39;items_wrap&#39; =&amp;gt;&#39;&amp;lt;ul class=&amp;quot;%2$s&amp;quot;&amp;gt;%3$s&amp;lt;/ul&amp;gt;&#39;)); ?</description>
     </item>
     
     <item>
@@ -47,8 +46,8 @@
       
       <guid>https://haruharuharukichi.github.io/so-thin/components/header/</guid>
       <description>Header PHPベーシックコード + header.php
- ```php &amp;lt;header role=&amp;quot;banner&amp;quot; class=&amp;quot;flex header_wrapper&amp;quot; style=&amp;quot;background-image:url(&amp;lt;?php header_image(); ?&amp;gt;);&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;header_content&amp;quot;&amp;gt; &amp;lt;h1 class=&amp;quot;header_title&amp;quot;&amp;gt; &amp;lt;?php if(is_home()){ bloginfo( &#39;name&#39; ); ?&amp;gt;&amp;lt;/h1&amp;gt; &amp;lt;p class=&amp;quot;header_descripiton&amp;quot;&amp;gt;&amp;lt;?php bloginfo( &#39;description&#39; ); ?&amp;gt;&amp;lt;/p&amp;gt; &amp;lt;?php }else{ if(is_single()){ $category = get_the_category($post-&amp;gt;ID); echo $category[0]-&amp;gt;cat_name; }elseif(is_page()){ the_title(); }elseif(is_archive()){ ?&amp;gt; archive &amp;lt;?php }elseif (is_search()) { ?&amp;gt; search &amp;lt;?php }elseif (is_404()) { ?&amp;gt; not found &amp;lt;?php }else{ the_title(); } ?&amp;gt; &amp;lt;/h1&amp;gt; &amp;lt;?php } ?&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/header&amp;gt; ```  function.php
-//カスタムヘッダー追加 add_theme_support( &#39;custom-header&#39; );     オーソドックスタイプ ノーマル See the Pen headerBasic by haruharuharukichi (@haruharuharukichi) on CodePen.</description>
+&amp;lt;header role=&amp;quot;banner&amp;quot; class=&amp;quot;flex header_wrapper&amp;quot; style=&amp;quot;background-image:url(&amp;lt;?php header_image(); ?&amp;gt;);&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;header_content&amp;quot;&amp;gt; &amp;lt;h1 class=&amp;quot;header_title&amp;quot;&amp;gt; &amp;lt;?php if(is_home()){ bloginfo( &#39;name&#39; ); ?&amp;gt;&amp;lt;/h1&amp;gt; &amp;lt;p class=&amp;quot;header_descripiton&amp;quot;&amp;gt;&amp;lt;?php bloginfo( &#39;description&#39; ); ?&amp;gt;&amp;lt;/p&amp;gt; &amp;lt;?php }else{ if(is_single()){ $category = get_the_category($post-&amp;gt;ID); echo $category[0]-&amp;gt;cat_name; }elseif(is_archive()){ echo &amp;quot;archive&amp;quot;; }elseif (is_search()) { echo &amp;quot;search&amp;quot;; }elseif (is_404()) { echo &amp;quot;not found&amp;quot;; }else{ the_title(); } ?&amp;gt; &amp;lt;/h1&amp;gt; &amp;lt;?php } ?&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/header&amp;gt;   + function.php
+//カスタムヘッダー追加 add_theme_support( &#39;custom-header&#39; );</description>
     </item>
     
     <item>
@@ -109,7 +108,9 @@ CF7 Smart Grid Design Extension</description>
       <pubDate>Sun, 17 Feb 2019 18:32:51 +0900</pubDate>
       
       <guid>https://haruharuharukichi.github.io/so-thin/function/</guid>
-      <description></description>
+      <description>function.php PHPベーシックコード function.phpの基礎的な記述内容です。
+先ず以下を張り付けてから、必要に応じてコードを追加していきましょう
+&amp;lt;?php /* *削除系・追加系・編集系の3種類 *系列を検索する際はCtrl+Fを押してから「○○系」と入力 */ /******************削除系******************/ //SEO対策 // WordPressバージョン情報の削除 remove_action(&#39;wp_head&#39;, &#39;wp_generator&#39;); // ショートリンクURLの削除 remove_action(&#39;wp_head&#39;, &#39;wp_shortlink_wp_head&#39;); // wlwmanifestの削除 remove_action(&#39;wp_head&#39;, &#39;wlwmanifest_link&#39;); // application/rsd+xmlの削除 remove_action(&#39;wp_head&#39;, &#39;rsd_link&#39;); // RSSフィードのURLの削除 remove_action(&#39;wp_head&#39;, &#39;feed_links_extra&#39;, 3); //自動成形停止 remove_filter( &#39;the_content&#39;, &#39;wpautop&#39; ); function override_mce_options( $init_array ) { $init_array[&#39;indent&#39;] = true; $init_array[&#39;wpautop&#39;] = false; return $init_array; } add_filter( &#39;tiny_mce_before_init&#39;, &#39;override_mce_options&#39; ); //ツールバー非表示 add_filter(&#39;show_admin_bar&#39;, &#39;__return_false&#39;); //Contact Form 7が読み込むCSSを削除 add_action( &#39;wp_enqueue_scripts&#39;, &#39;my_delete_plugin_styles&#39; ); function my_delete_plugin_styles() { wp_deregister_style( &#39;contact-form-7&#39; ); } //メディア挿入時のデフォルトのリンク先を「なし」に設定する function webshufu_default_noimagelink() { $webshufu_default_imagelink = get_option( &#39;image_default_link_type&#39; ); if ($webshufu_default_imagelink !</description>
     </item>
     
     <item>
@@ -155,7 +156,7 @@ WEBサイト作成サービスsoThinです。
 お手数おかけしますが、ご協力お願いします！
 お聞きしたい項目は以下の通りです。
 1. 【質問１ ex. 色について　前回のヒアリングを確認したところ、クールな美容室といったイメージを持ちました。コンセプトカラーは青が良いかと考えたのですが、如何でしょうか？】
-2. 【質問２ ex. ユーザー層　概要から、メインユーザー層は30代女性あたりかと感じました。特にアピールしたい層はございますか？】</description>
+2. 【質問２ ex.</description>
     </item>
     
     <item>

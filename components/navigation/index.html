@@ -99,52 +99,56 @@
     <div id="toc"></div>
 </aside>
 <main role="main">
+    <p><h1>Navigation</h1>
+<div class="main_code">
     <h2>PHPベーシックコード</h2>
+    <div class="grid code_content">
+        <input type="radio" name="accordion" id="navPhp">
+        <label for="navPhp">+</label>
+        <div class="code_item">
+            <p>header.php</p></p>
 
-<div class="grid code_content">
-    <input type="checkbox" name="accordion" id="navPhp">
-    <label for="navPhp" style="grid-column: 2;">+</label>
-    <div class="code_item">
-        <p>header.php</p>
+<pre><code class="language-php">&lt;nav role=&quot;navigation&quot; id=&quot;navbar&quot; class=&quot;grid container navbar_wrapper&quot;&gt;
+	&lt;?php 
+		if ( function_exists( 'the_custom_logo' ) ) {
+		$custom_logo_id = get_theme_mod( 'custom_logo' );
+		$custom_logo_url = wp_get_attachment_image_url( $custom_logo_id , 'full' );
 
-            ```php
-            <nav class="grid container navbar_wrapper global" id="navbar" role="navigation">
-                <?php 
-                    if ( function_exists( 'the_custom_logo' ) ) {
-                    $custom_logo_id = get_theme_mod( 'custom_logo' );
-                    $custom_logo_url = wp_get_attachment_image_url( $custom_logo_id , 'full' );
+		echo '&lt;a class=&quot;flex navbar_brand&quot; href=&quot;' . esc_url( home_url() ) . '&quot; rel=&quot;home&quot;&gt;&lt;span class=&quot;navbar_logo&quot; style=&quot;background-image:url(' . esc_url( $custom_logo_url ) . ');&quot;&gt;&lt;/span&gt;&lt;/a&gt;';
+	}
+	?&gt;
+	&lt;button class=&quot;navbar_toggler&quot; id=&quot;navbarToggler&quot; type=&quot;button&quot;&gt;
+		&lt;span&gt;&lt;/span&gt;
+		&lt;span&gt;&lt;/span&gt;
+		&lt;span&gt;&lt;/span&gt;
+	&lt;/button&gt;
+	&lt;?php 
+	wp_nav_menu( array(
+	'theme_location'=&gt;'Navigation', 
+	'menu_class'    =&gt;'navbar_list',
+	'container'     =&gt;false, 
+	'items_wrap'    =&gt;'&lt;ul class=&quot;%2$s&quot;&gt;%3$s&lt;/ul&gt;'));
+	?&gt;
+&lt;/nav&gt;
+</code></pre>
 
-                    echo '<a class="flex navbar_brand" href="' . esc_url( home_url() ) . '" rel="home"><span class="navbar_logo" style="background-image:url(' . esc_url( $custom_logo_url ) . ');"></span></a>';
-                }
-                ?>
-                <button class="navbar_toggler" id="navbarToggler" type="button">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <?php wp_nav_menu( array(
-                'theme_location'=>'Navigation', 
-                'menu_class'    =>'navbar_list',
-                'container'     =>false, 
-                'items_wrap'    =>'<ul class="%2$s">%3$s</ul>'));
-                ?>
-            </nav>
-            ```
+<p></div>
+<input type="radio" name="accordion" id="funcPhp">
+<label for="funcPhp">+</label>
+<div class="code_item">
+<p>function.php</p></p>
 
-<p>function.php</p>
-                        
-```php
-//navigationの登録
+<pre><code class="language-php">//navigationの登録
 register_nav_menu( 'Navigation', 'ナビゲーション' );
 
 
 //カスタムロゴ追加
-add_theme_support( 'custom-logo', array( 'size' => 'raindrops-logo' ) );
+add_theme_support( 'custom-logo', array( 'size' =&gt; 'raindrops-logo' ) );
 
 
 //ナビゲーションのアンカータグにクラスを追加
 function add_menuclass($ulclass) {
-	return preg_replace('/<a /', '<a class="navbar_link"', $ulclass);
+	return preg_replace('/&lt;a /', '&lt;a class=&quot;navbar_link&quot;', $ulclass);
 }
 add_filter('wp_nav_menu','add_menuclass');
 
@@ -153,16 +157,18 @@ add_filter('wp_nav_menu','add_menuclass');
 add_filter( 'nav_menu_css_class', 'remove_to_currentClass', 10, 2 );
 function remove_to_currentClass( $classes, $item ) {
 	$classes = array();
-	if( $item -> current == true ) {
+	if( $item -&gt; current == true ) {
 		$classes[] = 'current';
 	}
 	return $classes;
 }
-```
+</code></pre>
 
+<p></div>
 </div>
-</div>
-<h2 class="main_title">オーソドックスタイプ</h2>
+</div></p>
+
+<p><h2 class="main_title">オーソドックスタイプ</h2>
 <div class="main_code">
     <h3 class="main_title">ノーマル</h3>
     <p class="codepen" data-height="265" data-theme-id="0" data-default-tab="js,result" data-user="haruharuharukichi" data-slug-hash="XOMjEx" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;" data-pen-title="XOMjEx">
@@ -198,7 +204,7 @@ function remove_to_currentClass( $classes, $item ) {
         on <a href="https://codepen.io">CodePen</a>.</span>
     </p>
     <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-</div>
+</div></p>
 
 </main>
 <footer role="contentinfo" class="inline-center footer_wrapper">@2019~ haruki kawashita</footer>

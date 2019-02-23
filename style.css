@@ -395,19 +395,42 @@ a:hover{
 	display: block;
 }
 
+#toc [class*="toc-h"]{
+	transition: .3s;
+}
+
+#toc [class*="toc-h"]:hover{
+	background-color: rgba(88, 74, 176,.3);
+}
+
 #toc .toc-h2 {
 	padding-left: 10px;
 }
 
 #toc .toc-h3 {
+	position: relative;
 	padding-left: 20px;
+}
+
+#toc .toc-h3::before{
+	content:"";
+	position:absolute;
+	top:0;
+	left:10px;
+	display: block;
+	width:1px;
+	height: 100%;
+	background-color: var(--font-color);
+}
+#toc .toc-h3.toc-active::before{
+	background-color: var(--base-color);
 }
 
 #toc .toc-h4 {
 	padding-left: 30px;
 }
 
-#toc .toc-active {
+#toc [class*="toc-h"].toc-active {
 	background: var(--main-color);
 }
 #toc .toc-active a{

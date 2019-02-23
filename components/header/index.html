@@ -103,44 +103,44 @@
 <div class="main_code">
     <h2>PHPベーシックコード</h2>
     <div class="grid code_content">
-        <input type="checkbox" name="accordion" id="navPhp">
-        <label for="navPhp" style="grid-column: 2;">+</label>
+        <input type="radio" name="accordion" id="headerPhp">
+        <label for="headerPhp">+</label>
         <div class="code_item">
             <p>header.php</p></p>
 
-<pre><code>            ```php
-            &lt;header role=&quot;banner&quot; class=&quot;flex header_wrapper&quot; style=&quot;background-image:url(&lt;?php header_image(); ?&gt;);&quot;&gt;
-                &lt;div class=&quot;header_content&quot;&gt;
-                    &lt;h1 class=&quot;header_title&quot;&gt;
-                    &lt;?php
-                    if(is_home()){
-                        bloginfo( 'name' ); ?&gt;&lt;/h1&gt;
-                        &lt;p class=&quot;header_descripiton&quot;&gt;&lt;?php bloginfo( 'description' ); ?&gt;&lt;/p&gt;
-                        &lt;?php
-                    }else{
-                        if(is_single()){
-                            $category = get_the_category($post-&gt;ID); 
-                            echo $category[0]-&gt;cat_name;
-                        }elseif(is_page()){
-                            the_title();
-                        }elseif(is_archive()){ ?&gt;
-                            archive
-                        &lt;?php }elseif (is_search()) { ?&gt;
-                            search
-                        &lt;?php }elseif (is_404()) { ?&gt;
-                            not found
-                        &lt;?php }else{
-                            the_title();
-                        } ?&gt;
-                    &lt;/h1&gt;
-                        &lt;?php
-                    } ?&gt;
-                &lt;/div&gt;
-            &lt;/header&gt;
-            ```
+<pre><code class="language-php">&lt;header role=&quot;banner&quot; class=&quot;flex header_wrapper&quot; style=&quot;background-image:url(&lt;?php header_image(); ?&gt;);&quot;&gt;
+	&lt;div class=&quot;header_content&quot;&gt;
+		&lt;h1 class=&quot;header_title&quot;&gt;
+		&lt;?php
+		if(is_home()){
+			bloginfo( 'name' ); ?&gt;&lt;/h1&gt;
+			&lt;p class=&quot;header_descripiton&quot;&gt;&lt;?php bloginfo( 'description' ); ?&gt;&lt;/p&gt;
+			&lt;?php
+		}else{
+			if(is_single()){
+				$category = get_the_category($post-&gt;ID); 
+				echo $category[0]-&gt;cat_name;
+			}elseif(is_archive()){ 
+				echo &quot;archive&quot;;
+			}elseif (is_search()) { 
+				echo &quot;search&quot;;
+			}elseif (is_404()) {
+				echo &quot;not found&quot;;
+			}else{
+				the_title();
+			} ?&gt;
+		&lt;/h1&gt;
+			&lt;?php
+		} ?&gt;
+	&lt;/div&gt;
+&lt;/header&gt;
 </code></pre>
 
-<p>function.php</p>
+<p></div>
+<input type="radio" name="accordion" id="funcPhp">
+<label for="funcPhp">+</label>
+<div class="code_item">
+<p>function.php</p></p>
 
 <pre><code class="language-php">//カスタムヘッダー追加
 add_theme_support( 'custom-header' );
@@ -148,8 +148,9 @@ add_theme_support( 'custom-header' );
 
 <p></div>
 </div>
-</div>
-<h2 class="main_title">オーソドックスタイプ</h2>
+</div></p>
+
+<p><h2 class="main_title">オーソドックスタイプ</h2>
 <div class="main_code">
     <h3 class="main_title">ノーマル</h3>
     <p class="codepen" data-height="265" data-theme-id="0" data-default-tab="css,result" data-user="haruharuharukichi" data-slug-hash="mvmReX" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;" data-pen-title="headerBasic">

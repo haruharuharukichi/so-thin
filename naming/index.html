@@ -99,10 +99,10 @@
     <div id="toc"></div>
 </aside>
 <main role="main">
-    <p><h1 class="main_title">BEMカスタム命名規則</h1>
+    <p><h1>BEMカスタム命名規則</h1>
 <div id="namingClass">
-<h2 class="main_title">クラス名</h2>
-<h3 class="main_title">メインクラス</h3>
+<h2>クラス名</h2>
+<h3>メインクラス</h3>
 <ul>
     <li>Blockはセクション名+_wrapper(Block単体ではなく、Block_elementのように扱う)</li>
     <li>Blockは量産せず、なるべく少ないブロック数でコーディングする</li>
@@ -118,7 +118,7 @@
     <li>必要に応じてsectionにidを設定する</li>
     <li>Block名等が2単語以上からなる場合はキャメルケースで繋ぐ</li>
 </ul>
-<h3 class="main_title">グローバルクラス（特殊クラス）</h3>
+<h3>グローバルクラス（特殊クラス）</h3>
 <ul>
     <li>メインクラスの補助としてグローバルクラスを導入しても良い</li>
     <li>JSにクラスを使う場合、一般的な装飾を行う場合はグローバルクラスとして扱う</li>
@@ -129,9 +129,9 @@
     <li>Block名等が2単語以上からなる場合はキャメルケースで繋ぐ</li>
     <li>記述はグローバルクラス→メインクラスの順（一般的な設定→細かい設定の順）</li>
 </ul>
-<h3 class="main_title">サンプル</h3>
-<h4 class="main_title">名前使用例</h4>
-<h5 class="main_title">メインクラス</h5>
+<h3>サンプル</h3>
+<h4>名前使用例</h4>
+<h5>メインクラス</h5>
 <p>Block</p>
 <ul>
     <li>navbar</li>
@@ -160,7 +160,7 @@
     <li>aside</li>
     <li>footer</li>
 </ul>
-<h5 class="main_title">グローバルクラス</h5>
+<h5>グローバルクラス</h5>
 <ul>
     <li>container</li>
     <li>Inview</li>
@@ -168,7 +168,7 @@
     <li>inline-center</li>
     <li>inline-right</li>
 </ul>
-<h4 class="main_title">HTML</h4></p>
+<h4>HTML</h4></p>
 
 <pre><code class="language-html">&lt;section class=&quot;container&quot;&gt;
 	&lt;div class=&quot;block_wrapper&quot;&gt;
@@ -205,7 +205,7 @@
 &lt;/section&gt;
 </code></pre>
 
-<h4 class="main_title">CSS/SCSS</h4>
+<h4>CSS/SCSS</h4>
 
 <pre><code class="language-css">.block {
 	&amp;_wrapper {}
@@ -239,12 +239,12 @@
 }
 </code></pre>
 
-<h4 class="main_title">超具体的な使用例</h4>
+<h4>超具体的な使用例</h4>
 
 <pre><code class="language-html">&lt;section class=&quot;container inline-center main_wrapper&quot;&gt;
 	&lt;div class=&quot;main_bgr&quot;&gt;&lt;/div&gt;
 	&lt;div class=&quot;main_inner&quot;&gt;
-		&lt;h2 class=&quot;main_title&quot;&gt;main title&lt;/h2&gt;
+		&lt;h2&gt;main title&lt;/h2&gt;
 		&lt;p class=&quot;main_description&quot;&gt;main information&lt;/p&gt;
 		&lt;ul class=&quot;Inview main_content list&quot;&gt;
 			&lt;li class=&quot;FadeIn Viewing main_item&quot;&gt;
@@ -287,7 +287,7 @@
 
 <p></div>
 <div id="namingId">
-    <h2 class="main_title">ID名</h2>
+    <h2>ID名</h2>
     <ul>
         <li>idはキャメルケースで設定する</li>
         <li>idはページ名+セクション名+要素名でつける。複数ある場合は要素名の後に数字 ex)indexMainTitle</li>
@@ -296,7 +296,7 @@
     </ul>
 </div>
 <div class="namingImg">
-    <h2 class="main_title">画像名</h2>
+    <h2>画像名</h2>
     <ul>
         <li>./lib/images内で管理する</li>
         <li>画像名は全ページで使いまわすものは要素名のみ</li>
