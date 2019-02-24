@@ -6,10 +6,21 @@
     <description>Recent content on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 17 Feb 2019 18:47:18 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 24 Feb 2019 16:10:45 +0900</lastBuildDate>
     
 	<atom:link href="https://haruharuharukichi.github.io/so-thin/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Material</title>
+      <link>https://haruharuharukichi.github.io/so-thin/material/</link>
+      <pubDate>Sun, 24 Feb 2019 16:10:45 +0900</pubDate>
+      
+      <guid>https://haruharuharukichi.github.io/so-thin/material/</guid>
+      <description>素材の集め方・おすすめサイト 色 お薦めサイト  ColorPick Eyedropper  困ったらまずコレ。気に入ったサイトで起動すれば、色コードを簡単に取得できる。TTP（徹底的にパクる）する際に便利  パレットン  色相を考えて合う色を計算してくれる優れもの。暗明のバリエーションもあるので、ぶっちゃけ全部これ使えばいいんじゃね？  palettable  色をどんどん提案してくれるので、サブ配色を決める際に便利  COLOR TOOL  マテリアルデザインの定義に従った配色を提案してくれる  カラーコード変換ツール  何かと便利な変換ツール。   お薦め色の決め方  ColorPick Eyedropperを使って参考にしたサイトのメインカラーをコピー イメージに合うように、パレットンで色をちょっとずらす メインカラーをものすごく明るくしたのと、ものすごく暗くしたのをそれぞれベースカラー、フォントカラーとして採用 イメージに合い、メインカラーと喧嘩しないサブカラーとアクセントカラーをパレットンで探す（角度と明暗を調整しつつ探す） 実装してみて合わなければ修正  実装には、以下のようにstyle.cssのトップにCSS変数を宣言し、使用か所ではそれを呼び出すと良い。
+:root{ --base-color:rgb(247,247,247);/*#f7f7f7*/ --base-transparent:rgba(247,247,247,.4); --font-color:rgb(35, 31, 32);/*#231f20*/ --main-color:rgb(0, 140, 9);/*#008C09*/ --accent-color:rgb(226, 174, 5);/*#E2AE05*/ } /*使用か所*/ .main_title{ color:var(--base-color); background-color:var(--main-color); }  ※CSS変数は動かないブラウザもあるので、GitHub Pagesへの実装の際は全て通常の色指定に戻す事
+/*GitHub Pagesアップの際はこれはダメ*/ .main_title{ color:var(--base-color); background-color:var(--main-color); border:1px solid var(--base-transparent); } /*これに治す*/ .main_title{ color:#f7f7f7; background-color:#008C09; border:1px solid rgba(247,247,247,.</description>
+    </item>
     
     <item>
       <title>Table</title>

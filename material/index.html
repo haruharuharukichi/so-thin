@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="utf-8n">
+	<meta name="Description" CONTENT="ここにページのディスクリプション">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="Haruki Kawashita">
+	
+	<meta property="og:title" content="ここにタイトル">
+	<meta property="og:type" content="ここにタイプ">
+	<meta property="og:url" content="ここにページのURL">
+	<meta property="og:image" content="ここにサムネイル画像のURL">
+	<meta property="og:site_name" content="ここにサイト名">
+	<meta property="og:description" content="ここにページのディスクリプション">
+	
+	<meta property="fb:app_id" content="App-ID（15文字の半角数字）">
+	
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="@Twitterアカウント">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>TITLE</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,900" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+	
+	<script type="text/javascript" src="https://haruharuharukichi.github.io/so-thin/js/prettify.js"></script>
+	<link href="https://haruharuharukichi.github.io/so-thin/css/prettify.css" type="text/css" rel="stylesheet">
+
+	
+	<link rel="stylesheet" href="https://haruharuharukichi.github.io/so-thin/css/iota.css" />
+
+	<link rel="stylesheet" href="https://haruharuharukichi.github.io/so-thin/style.css">
+</head>
+
+<body onload="prettyPrint()">
+	<nav role="navigation" id="globalNavi" class="grid inline-center navbar_wrapper sticky">
+		<a href="https://haruharuharukichi.github.io/so-thin/" rel="home" class="flex navbar_brand">
+			<span class="navbar_logo">
+				LO<br>GO
+			</span>
+		</a>
+		<button type="button" id="navbarToggler" class="navbar_toggler">
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
+		<ul class="navbar_list font-sm">
+			<li><a class="navbar_link" href="https://haruharuharukichi.github.io/so-thin/">home</a></li>
+			<li><a class="navbar_link" href="https://haruharuharukichi.github.io/so-thin/naming">命名規則</a></li>
+			<li><a class="navbar_link" href="https://haruharuharukichi.github.io/so-thin/flow">全体の流れ</a></li>
+			<li><a class="navbar_link" href="https://haruharuharukichi.github.io/so-thin/function">function</a></li>
+			<li><a class="navbar_link" href="https://haruharuharukichi.github.io/so-thin/plugin">plugin</a></li>
+			<li><a class="navbar_link" href="https://haruharuharukichi.github.io/so-thin/material">素材</a></li>
+			<li><a class="navbar_link" href="https://haruharuharukichi.github.io/so-thin/components/">コンポーネント</a></li>
+		</ul>
+	</nav>
+	<div class="grid body_wrapper">
+<aside role="complementary" class="sidebar_wrapper">
+    <ul>
+        
+        <li>
+            <a href="/so-thin/components/">
+                COMPONENTS TOP
+            </a>
+        </li>
+        
+        <li>
+            <a href="/so-thin/components/grid/">
+                Grid
+            </a>
+        </li>
+        
+        <li>
+            <a href="/so-thin/components/header/">
+                Header
+            </a>
+        </li>
+        
+        <li>
+            <a href="/so-thin/components/navigation/">
+                Navigation
+            </a>
+        </li>
+        
+        <li>
+            <a href="/so-thin/components/card/">
+                Card
+            </a>
+        </li>
+        
+        <li>
+            <a href="/so-thin/components/button/">
+                Button
+            </a>
+        </li>
+        
+    </ul>
+</aside>
+<aside role="complementary" class="sidebar_wrapper">
+    <div id="toc"></div>
+</aside>
+<main role="main">
+    
+
+<h1 id="素材の集め方-おすすめサイト">素材の集め方・おすすめサイト</h1>
+
+<h2 id="色">色</h2>
+
+<h3 id="お薦めサイト">お薦めサイト</h3>
+
+<ul>
+<li><a href="https://chrome.google.com/webstore/detail/colorpick-eyedropper/ohcpnigalekghcmgcdcenkpelffpdolg">ColorPick Eyedropper</a>
+
+<ul>
+<li>困ったらまずコレ。気に入ったサイトで起動すれば、色コードを簡単に取得できる。TTP（徹底的にパクる）する際に便利</li>
+</ul></li>
+<li><a href="http://paletton.com/#uid=1000u0kllllaFw0g0qFqFg0w0aF">パレットン</a>
+
+<ul>
+<li>色相を考えて合う色を計算してくれる優れもの。暗明のバリエーションもあるので、ぶっちゃけ全部これ使えばいいんじゃね？</li>
+</ul></li>
+<li><a href="https://www.palettable.io/D256FF">palettable</a>
+
+<ul>
+<li>色をどんどん提案してくれるので、サブ配色を決める際に便利</li>
+</ul></li>
+<li><a href="https://material.io/tools/color/#!/?view.left=0&amp;view.right=0&amp;primary.color=E53935">COLOR TOOL</a>
+
+<ul>
+<li>マテリアルデザインの定義に従った配色を提案してくれる</li>
+</ul></li>
+<li><a href="https://tech-unlimited.com/color.html">カラーコード変換ツール</a>
+
+<ul>
+<li>何かと便利な変換ツール。</li>
+</ul></li>
+</ul>
+
+<h3 id="お薦め色の決め方">お薦め色の決め方</h3>
+
+<ol>
+<li>ColorPick Eyedropperを使って参考にしたサイトのメインカラーをコピー</li>
+<li>イメージに合うように、パレットンで色をちょっとずらす</li>
+<li>メインカラーをものすごく明るくしたのと、ものすごく暗くしたのをそれぞれベースカラー、フォントカラーとして採用</li>
+<li>イメージに合い、メインカラーと喧嘩しないサブカラーとアクセントカラーをパレットンで探す（角度と明暗を調整しつつ探す）</li>
+<li>実装してみて合わなければ修正</li>
+</ol>
+
+<p>実装には、以下のようにstyle.cssのトップにCSS変数を宣言し、使用か所ではそれを呼び出すと良い。</p>
+
+<pre><code class="language-css">:root{
+	--base-color:rgb(247,247,247);/*#f7f7f7*/
+	--base-transparent:rgba(247,247,247,.4);
+	--font-color:rgb(35, 31, 32);/*#231f20*/
+	--main-color:rgb(0, 140, 9);/*#008C09*/
+	--accent-color:rgb(226, 174, 5);/*#E2AE05*/
+}
+
+/*使用か所*/
+.main_title{
+    color:var(--base-color);
+    background-color:var(--main-color);
+}
+</code></pre>
+
+<p>※CSS変数は動かないブラウザもあるので、GitHub Pagesへの実装の際は全て通常の色指定に戻す事</p>
+
+<pre><code class="language-css">/*GitHub Pagesアップの際はこれはダメ*/
+.main_title{
+    color:var(--base-color);
+    background-color:var(--main-color);
+    border:1px solid var(--base-transparent);
+}
+
+/*これに治す*/
+.main_title{
+    color:#f7f7f7;
+    background-color:#008C09;
+    border:1px solid rgba(247,247,247,.4);
+}
+</code></pre>
+
+<h2 id="画像">画像</h2>
+
+<h3 id="お薦めサイト-1">お薦めサイト</h3>
+
+<ul>
+<li><a href="https://freephotos.cc/ja">freephotos</a>
+
+<ul>
+<li>外国人メインのフリー画像サイト。著作権表示必要なし。風景画が綺麗</li>
+</ul></li>
+<li><a href="https://pixabay.com/ja/">pixabay</a>
+
+<ul>
+<li>同じく外国メインのフリー画像サイト。著作権表示必要なし。</li>
+</ul></li>
+<li><a href="http://gahag.net/">GAHAG</a>
+
+<ul>
+<li>アジア系女性が多いフリー画像サイト</li>
+</ul></li>
+<li><a href="https://publicdomainq.net/">パブリックドメインQ</a>
+
+<ul>
+<li>アジア系女性が多いフリー画像サイト</li>
+</ul></li>
+<li><a href="https://www.photo-ac.com/">写真AC</a>
+
+<ul>
+<li>ログインが必要なフリー画像サイト。モノ・風景などには良いかも</li>
+</ul></li>
+<li><a href="https://jp.freepik.com/">freepik</a>
+
+<ul>
+<li>ベクター素材を集めたサイト</li>
+</ul></li>
+<li><a href="https://find47.jp/ja/list/">FIND47</a>
+
+<ul>
+<li>経産省公式フリー画像サイト。<strong>著作権表示が必要</strong>なのがネック</li>
+</ul></li>
+<li><a href="http://photoshopvip.net/freebies/free-pic">PHOTOSHOP VIP</a>
+
+<ul>
+<li>デザイン関係色々まとめたサイト</li>
+</ul></li>
+</ul>
+
+<p>ダウンロードした画像はサイズが大きすぎて重いので、サイズと容量を縮小させて軽くする（サイトの読み込みを遅くする最大の原因が画像サイズ）。</p>
+
+<h3 id="画像修正方法">画像修正方法</h3>
+
+<p>フォトショが無い場合は、<a href="https://www.gimp.org/downloads/">GIMP</a>を使いましょう。<br />
+レイヤーの概念がある為わりと使いやすい。</p>
+
+<h4 id="縦横サイズ修正">縦横サイズ修正</h4>
+
+<ol>
+<li>GIMPを起動</li>
+<li>編集したい画像をGIMPの画面にドラッグ＆ドロップ</li>
+<li>画像の上で右クリック→画像→「画像の拡大・縮小」を選択</li>
+<li>幅を適正な値に修正（フルスクリーン表示するなら1980px,しないなら1200px推奨）</li>
+<li>拡大縮小をクリック</li>
+<li>また右クリック→レイヤー→「レイヤーをキャンパスにあわせる」を選択</li>
+<li>左上のファイル→「〇〇に上書きエクスポート」を選択し、終了（gimpファイルは保存しないでも良い）</li>
+</ol>
+
+<h4 id="容量圧縮">容量圧縮</h4>
+
+<ol>
+<li><a href="https://compressjpeg.com/ja/">JPG圧縮</a>または<a href="https://compresspng.com/ja/">PNG圧縮</a>にアクセス</li>
+<li>ファイルをアップロード</li>
+<li>画像のサムネイルをクリック</li>
+<li>クオリティを７０に設定し摘要をクリック</li>
+<li>全てダウンロードし、ファイル名から「-min」を削除し元ファイルに上書き</li>
+</ol>
+
+<h2 id="アイコン">アイコン</h2>
+
+<h3 id="お薦めサイト-2">お薦めサイト</h3>
+
+<ul>
+<li><a href="http://icooon-mono.com/">ICCON MONO</a>
+
+<ul>
+<li>やや線が太めのアイコン</li>
+</ul></li>
+<li><a href="https://iconmonstr.com/">iconmonstr</a>
+
+<ul>
+<li>数は少ないが使いやすい</li>
+</ul></li>
+<li><a href="https://material.io/tools/icons/?style=baseline">MATERIAL ICON</a>
+
+<ul>
+<li>Google提供</li>
+</ul></li>
+<li><a href="https://fontawesome.com/">font awesome</a>
+
+<ul>
+<li>割とメジャー</li>
+</ul></li>
+</ul>
+
+<h3 id="svg使い方">SVG使い方</h3>
+
+<p>SVGは基本的にインライン（HTMLに組み込ん）で使用する。<br />
+必要に応じてwidth,heightを調整して使用する。</p>
+
+<pre><code class="language-html">&lt;svg version=&quot;1.1&quot; id=&quot;Svg&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; viewBox=&quot;0 0 512 512&quot; xml:space=&quot;preserve&quot;&gt;
+    &lt;!-- グラデーションを効かせたい時に使う --&gt;
+    &lt;defs&gt;
+        &lt;linearGradient id=&quot;gradientId&quot;&gt;
+            &lt;stop class=&quot;stop1&quot; offset=&quot;0&quot;/&gt;
+            &lt;stop class=&quot;stop2&quot; offset=&quot;0.5&quot;/&gt;
+        &lt;/linearGradient&gt;
+    &lt;/defs&gt;
+    &lt;!-- 本体。gタグはpathが1つしかないときはいらない --&gt;
+    &lt;g&gt;
+        &lt;path id=&quot;pathId1&quot; d=&quot;座標&quot;&gt;&lt;/path&gt;
+        &lt;path d=&quot;座標&quot;&gt;&lt;/path&gt;
+    &lt;/g&gt;
+&lt;/svg&gt;
+</code></pre>
+
+<pre><code class="language-css">
+#gradientId .stop1{
+		stop-color: var(--accent-color);
+	        animation: reflect 3.2s 0.1s infinite;
+}
+#gradientId .stop2{
+		stop-color: var(--main-color);
+	        animation: reflect 3.2s 0s infinite;
+}
+#pathId1{
+	fill: url(#gradientId);
+}
+@keyframes reflect{
+	0%{
+		stop-color: var(--font-color);
+	}
+	30%{
+		stop-color: var(--font-color);
+	}
+	55%{
+		stop-color: var(--accent-color);
+	}
+	75%{
+		stop-color: var(--main-color);
+	}
+	100%{
+		stop-color: var(--font-color);
+	}
+}
+</code></pre>
+
+<h2 id="フォント">フォント</h2>
+
+<h3 id="お薦めサイト-3">お薦めサイト</h3>
+
+<ul>
+<li><a href="https://fonts.google.com/">Google font</a>
+
+<ul>
+<li>定番最強サイト。これのmontserrat愛してる。困ったらmontserratで</li>
+</ul></li>
+<li><a href="https://thinkit.co.jp/story/2011/08/18/2233">CSSのWebフォント</a>
+
+<ul>
+<li>無駄にDLしないでも良いことも</li>
+</ul></li>
+<li><a href="https://www.soldi.jp/articles/font_select_2017/">フォント20選</a>
+
+<ul>
+<li>有料版も入ってるが参考にはなる。</li>
+</ul></li>
+</ul>
+
+<p>困ったら「PHOTOSHOP VIP　フォント」でググろう<br />
+英字はWebフォント、日本語本文はCSS3のフォントが速度の面で合理的
+Google fontはCDNで使うと便利だが、トラフィックの多いサイトでは通信が増えると重くなることも。<br />
+ダウンロードしてソースに追加して使用する方が合理的な場合は、其方を採用しましょう</p>
+
+<h3 id="フォント使用方法">フォント使用方法</h3>
+
+<h4 id="cdn">CDN</h4>
+
+<p>CDNなら、Google fontからとってきたリンクをヘッダーに追記</p>
+
+<pre><code class="language-html">&lt;head&gt;
+	&lt;link href=&quot;https://fonts.googleapis.com/css?family=Montserrat:300,400,600,900&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;/head&gt;
+</code></pre>
+
+<p>CSSの上部に追記（font-familyのデフォルトはinheritなのでhtmlタグに適用するだけで全てに効く）</p>
+
+<pre><code class="language-css">html{
+	font-family: 'Montserrat', sans-serif;
+}
+</code></pre>
+
+<h4 id="ダウンロード-ソースに追加">ダウンロード（ソースに追加）</h4>
+
+<p>使用可能拡張子（早い順）</p>
+
+<ul>
+<li>woff2</li>
+<li>woff</li>
+<li>ttf</li>
+<li>otf</li>
+</ul>
+
+<p>拡張子はwoff2が一番軽いので、可能な限りwoff2を使いましょう<br />
+woff2,woffはIEでは使えないこともあるので、IEでのWebフォントは捨てましょう！</p>
+
+<ol>
+<li>拡張子がwoff出ない場合は<a href="https://convertio.co/ja/ttf-woff/">woffコンバーター</a>で変換</li>
+<li>libフォルダ内にfontsフォルダを作成し、woffファイルをアップロード</li>
+<li>CSSを編集</li>
+</ol>
+
+<pre><code class="language-css">@font-face {
+  font-family: 'WebFont';
+  src: url('./lib/fonts/WebFont.woff2') format('woff2'),
+        url('./lib/fonts/WebFont.woff') format('woff'),
+       url('./lib/fonts/WebFont.ttf') format('truetype');
+}
+html {
+  font-family: 'WebFont';
+}
+</code></pre>
+
+<h2 id="jsライブラリ-フレームワーク">JSライブラリ・フレームワーク</h2>
+
+<h3 id="お薦め機能">お薦め機能</h3>
+
+<ul>
+<li><a href="https://github.com/protonet/jquery.inview">inview.js</a>
+
+<ul>
+<li>画面に映ったら〇〇が出来る</li>
+</ul></li>
+<li><a href="http://kenwheeler.github.io/slick/">slick.js</a>
+
+<ul>
+<li>スライドショー</li>
+</ul></li>
+<li><a href="https://github.com/Prinzhorn/skrollr">scrollr</a>
+
+<ul>
+<li>パララックス</li>
+</ul></li>
+</ul>
+
+</main>
+<footer role="contentinfo" class="inline-center footer_wrapper">@2019~ haruki kawashita</footer>
+</div>
+<script type='text/javascript' src='https://haruharuharukichi.github.io/so-thin/js/toc.min.js'></script>
+<script type='text/javascript' src='https://haruharuharukichi.github.io/so-thin/js/main.js'></script>

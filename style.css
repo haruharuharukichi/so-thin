@@ -21,10 +21,12 @@ Author URI: haruharuharukichi.github.io
 }
 *{
 	box-sizing: border-box;
-	font-family: 'Montserrat', sans-serif;
 }
 html,body{
 	margin: 0;
+}
+html{
+	font-family: 'Montserrat', sans-serif;
 }
 /*font-size setting*/
 h1{
@@ -427,7 +429,29 @@ a:hover{
 }
 
 #toc .toc-h4 {
+	position: relative;
 	padding-left: 30px;
+}
+
+#toc .toc-h4::before,#toc .toc-h4::after{
+	content:"";
+	position:absolute;
+	left:10px;
+	display: block;
+	background-color: var(--font-color);
+}
+#toc .toc-h4::before{
+	top:0;
+	width:1px;
+	height: 100%;
+}
+#toc .toc-h4::after{
+	top:calc(50% - .5px);
+	width:10px;
+	height: 1px;
+}
+#toc .toc-h4.toc-active::before,#toc .toc-h4.toc-active::after{
+	background-color: var(--base-color);
 }
 
 #toc [class*="toc-h"].toc-active {
