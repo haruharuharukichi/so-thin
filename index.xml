@@ -6,10 +6,25 @@
     <description>Recent content on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 24 Feb 2019 16:10:45 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 01 Mar 2019 17:49:18 +0900</lastBuildDate>
     
 	<atom:link href="https://haruharuharukichi.github.io/so-thin/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Todo</title>
+      <link>https://haruharuharukichi.github.io/so-thin/todo/</link>
+      <pubDate>Fri, 01 Mar 2019 17:49:18 +0900</pubDate>
+      
+      <guid>https://haruharuharukichi.github.io/so-thin/todo/</guid>
+      <description>やりたいことリスト マーケティングコンサル（サイトのプラットフォーム化） APIでサイト管理 Core Reporting APIとSearch Console API使って顧客のアナリティクスとサーチコンソールのデータを取り出して、コンサルしたい
+UI最適化 上記と同じく、サイト内部でのユーザーの動きと感情をコンサル
+トータルコーディネート SEOだけじゃなくて外部からの流入・内部での動線・外部への流出をトータルでコーディネートして、顧客にとって最適なシステムを作りたい（ネットワーク化に対応したい）
+コンテンツマネジメント コンテンツマーケが主流の現在に対応出来る様、顧客のコンテンツの質を高めたい
+制作自動化 AIとか使ってサイト制作をもっと簡単にしたい
+コンポーネント最適化 サイトに埋め込むコンポーネントをもっとイケてる感じにしたい
+schema.org導入 リッチスニペットに完全対応したい</description>
+    </item>
     
     <item>
       <title>Material</title>
