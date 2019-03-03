@@ -633,9 +633,42 @@ thead th{
 tbody td{
 	border-bottom: 1px solid var(--font-color);
 }
+/***templates*/
+.home > p{
+	margin: 0;
+}
 /**singular*/
 /**page*/
 /**post*/
+.main_post{
+	padding: 0;
+}
+.post_card.thumbnail{
+    grid-column: auto;
+	grid-row: auto;
+	list-style: none;
+}
+.post_card.thumbnail .post_link{
+	display: inline-block;
+	background-color: rgba(88,74,176,.05);
+	border: .5rem solid transparent;
+	text-decoration: none;
+	color: var(--font-color);
+	text-align: center;
+	transition: .3s;
+}
+.post_card.thumbnail .post_link:hover{
+	border: .5rem solid rgba(88, 74, 176,.3);
+}
+.post_card.thumbnail .post_img{
+	filter: none;
+}
+.post_card.thumbnail .post_title{
+	border: none;
+	margin: 0;
+	font-size: 1.2rem;
+	font-weight: 400;
+}
 /*media queries*/
 @media (max-width: 575px){
 	html{
