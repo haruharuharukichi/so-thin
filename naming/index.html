@@ -108,8 +108,76 @@
 </aside>
 <main role="main">
     <p><h1>BEMカスタム命名規則</h1>
-<div id="namingClass">
-<h2>クラス名</h2>
+<div id="namingClass"></p>
+
+<h2>超具体的な使用例</h2>
+
+<pre><code class="language-html">&lt;nav class=&quot;navbar_wrapper&quot;&gt;
+	&lt;ul class=&quot;navbar_list&quot;&gt;
+		&lt;li&gt;&lt;a href=&quot;&quot; class=&quot;navbar_link&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;&quot; class=&quot;navbar_link&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;&quot; class=&quot;navbar_link&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/nav&gt;
+&lt;header class=&quot;header_wrapper&quot;&gt;
+	&lt;h1 class=&quot;header_title&quot;&gt;title&lt;/h1&gt;
+	&lt;p class=&quot;header_description&quot;&gt;description&lt;/p&gt;
+&lt;/header&gt;
+&lt;main class=&quot;container&quot;&gt;
+	&lt;section class=&quot;main_wrapper&quot;&gt;
+		&lt;h2 class=&quot;main_title&quot;&gt;main title&lt;/h2&gt;
+		&lt;p class=&quot;main_description&quot;&gt;main information&lt;/p&gt;
+	&lt;/section&gt;
+	&lt;section class=&quot;main_wrapper&quot;&gt;
+		&lt;div class=&quot;main_bgr&quot;&gt;&lt;/div&gt;
+		&lt;h2 class=&quot;main_title&quot;&gt;main title&lt;/h2&gt;
+		&lt;p class=&quot;main_description&quot;&gt;main information&lt;/p&gt;
+		&lt;ul class=&quot;main_content list&quot;&gt;
+			&lt;li class=&quot;main_item&quot;&gt;
+				&lt;div class=&quot;main_card&quot;&gt;
+					&lt;div class=&quot;card_header&quot;&gt;
+						&lt;div class=&quot;card_title&quot;&gt;card title&lt;/div&gt;
+						&lt;div class=&quot;card_description&quot;&gt;card information&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;div class=&quot;card_body&quot;&gt;
+						&lt;div class=&quot;card_text&quot;&gt;card text&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/li&gt;
+			&lt;li class=&quot;main_item&quot;&gt;
+				&lt;div class=&quot;main_card&quot;&gt;
+					&lt;div class=&quot;card_header&quot;&gt;
+						&lt;div class=&quot;card_title&quot;&gt;card title&lt;/div&gt;
+						&lt;div class=&quot;card_description&quot;&gt;card information&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;div class=&quot;card_body&quot;&gt;
+						&lt;div class=&quot;card_text&quot;&gt;card text&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/li&gt;
+			&lt;li class=&quot;main_item&quot;&gt;
+				&lt;div class=&quot;main_card&quot;&gt;
+					&lt;div class=&quot;card_header&quot;&gt;
+						&lt;div class=&quot;card_title&quot;&gt;card title&lt;/div&gt;
+						&lt;div class=&quot;card_description&quot;&gt;card information&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;div class=&quot;card_body&quot;&gt;
+						&lt;div class=&quot;card_text&quot;&gt;card text&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/section&gt;
+&lt;/main&gt;
+&lt;aside class=&quot;sidebar_wrapper&quot;&gt;
+	&lt;div class=&quot;sidebar_widget&quot;&gt;&lt;/div&gt;
+&lt;/aside&gt;
+&lt;footer class=&quot;footer_wrapper&quot;&gt;
+	&lt;p class=&quot;footer_text&quot;&gt;copyright 2019~ so-thin&lt;/p&gt;
+&lt;/footer&gt;
+</code></pre>
+
+<p><h2>クラス名</h2>
 <h3>メインクラス</h3>
 <ul>
     <li>Blockはセクション名+_wrapper(Block単体ではなく、Block_elementのように扱う)</li>
@@ -245,52 +313,6 @@
 		}
 	}
 }
-</code></pre>
-
-<h4>超具体的な使用例</h4>
-
-<pre><code class="language-html">&lt;section class=&quot;container inline-center main_wrapper&quot;&gt;
-	&lt;div class=&quot;main_bgr&quot;&gt;&lt;/div&gt;
-	&lt;div class=&quot;main_inner&quot;&gt;
-		&lt;h2&gt;main title&lt;/h2&gt;
-		&lt;p class=&quot;main_description&quot;&gt;main information&lt;/p&gt;
-		&lt;ul class=&quot;Inview main_content list&quot;&gt;
-			&lt;li class=&quot;FadeIn Viewing main_item&quot;&gt;
-				&lt;div class=&quot;main_card&quot;&gt;
-					&lt;div class=&quot;card_header&quot;&gt;
-						&lt;div class=&quot;card_title&quot;&gt;card title&lt;/div&gt;
-						&lt;div class=&quot;card_description&quot;&gt;card information&lt;/div&gt;
-					&lt;/div&gt;
-					&lt;div class=&quot;card_body&quot;&gt;
-						&lt;div class=&quot;card_title&quot;&gt;card text&lt;/div&gt;
-					&lt;/div&gt;
-				&lt;/div&gt;
-			&lt;/li&gt;
-			&lt;li class=&quot;FadeIn main_item&quot;&gt;
-				&lt;div class=&quot;main_card&quot;&gt;
-					&lt;div class=&quot;card_header&quot;&gt;
-						&lt;div class=&quot;card_title&quot;&gt;card title&lt;/div&gt;
-						&lt;div class=&quot;card_description&quot;&gt;card information&lt;/div&gt;
-					&lt;/div&gt;
-					&lt;div class=&quot;card_body&quot;&gt;
-						&lt;div class=&quot;card_title&quot;&gt;card text&lt;/div&gt;
-					&lt;/div&gt;
-				&lt;/div&gt;
-			&lt;/li&gt;
-			&lt;li class=&quot;FadeIn main_item&quot;&gt;
-				&lt;div class=&quot;main_card&quot;&gt;
-					&lt;div class=&quot;card_header&quot;&gt;
-						&lt;div class=&quot;card_title&quot;&gt;card title&lt;/div&gt;
-						&lt;div class=&quot;card_description&quot;&gt;card information&lt;/div&gt;
-					&lt;/div&gt;
-					&lt;div class=&quot;card_body&quot;&gt;
-						&lt;div class=&quot;card_title&quot;&gt;card text&lt;/div&gt;
-					&lt;/div&gt;
-				&lt;/div&gt;
-			&lt;/li&gt;
-		&lt;/ul&gt;
-	&lt;/div&gt;
-&lt;/section&gt;
 </code></pre>
 
 <p></div>

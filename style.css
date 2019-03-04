@@ -6,6 +6,7 @@ Version: 1.0
 Author: Haruki Kawashita
 Author URI: haruharuharukichi.github.io
 */
+@charset "utf-8";
 @use autoprefixer {
 	remove: false;
 	grid: true;
