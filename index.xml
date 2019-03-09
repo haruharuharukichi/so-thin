@@ -6,10 +6,33 @@
     <description>Recent content on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 03 Mar 2019 13:22:02 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 09 Mar 2019 13:38:00 +0900</lastBuildDate>
     
 	<atom:link href="https://haruharuharukichi.github.io/so-thin/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>iota.css &amp; naming</title>
+      <link>https://haruharuharukichi.github.io/so-thin/academy/001/</link>
+      <pubDate>Sat, 09 Mar 2019 13:38:00 +0900</pubDate>
+      
+      <guid>https://haruharuharukichi.github.io/so-thin/academy/001/</guid>
+      <description>iota.cssの使い方と命名規則 今回の目的  レスポンシブと正しいマークアップの重要性の理解 iota.cssを使いこなせる 命名規則に従ったコーディングが出来る  CSS Grid CSS Gridとは レスポンシブデザインを実現するためのCSSの新しい機能
+CSSのみでレスポンシブデザインを完全に実現できるのが特徴
+変遷 Webデザインの主流は以下のように変化してきている
+ tableレイアウト  HTMLだけでコーディングするうえ、tableタブが主流  CSS登場  HTMLとCSSの分業化  Flash活躍  アニメーションを求めてFlashが活躍  HTML5登場  HTMLの要素（headerやsection等）が増えて正しいマークアップが意識されるように  CSS進化  Flexboxなど、レイアウト用のプロパティが充実  Bootstrap流行  今でも現役の、みんな大好きブーツストラップが流行。レスポンシブの重要性が説かれるように  CSS Grid爆誕　←　イマココ  可読性と機能性を両立させたコーディングが大事に  リッチスニペット（今後来る）  マークアップ+構造化   正しいマークアップの重要性 Webサイトは分業化をテーマに進化してきている。
+正しいマークアップとは正しい役割分担といえる
+テーマは「可読性」これに尽きる 正しいマークアップが何故重要なのかというと、「読みやすいサイト」が求められているから
+正しいマークアップが必要なのはSEO対策で効果的だからと言うサイトも多いが、これは本質ではない
+SEO対策で正しいマークアップが評価されるのは、Googleがユーザー第一主義を取っているからであり、とどのつまり「ユーザーが求めている情報を簡単に手に入れらえるサイトが一番」ということ
+そのために、要素の細分化等を行いユーザーが求めている情報があることをGoogleに知らせることが重要になり、結果として正しいマークアップが求められるようになった つまり、「探しやすく見やすいサイト」のためのマークアップ
+正しいマークアップには副次的なメリットもある。
+それがメンテナンスの効率化
+要素をシンプルなモジュールにすることで、要素単位での改善が可能になる
+それによりプログラマ側の可読性も向上し、コーディングとメンテナンスが楽になる
+CSS GridはBootstrapなどよりも遥かに少ないコードで簡単に分かり易く実装できるため、可読性が向上する
+つまり、CSS Gridは時代に愛され、求められた機能</description>
+    </item>
     
     <item>
       <title>SmartLine</title>

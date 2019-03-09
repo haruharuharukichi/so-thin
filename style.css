@@ -509,6 +509,7 @@ main h5{
 	position: relative;
 	width: 100%;
 	background-color:var(--base-color);
+	grid-column: auto;
 }
 .main_card.grid{
 	grid-gap: 0;
