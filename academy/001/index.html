@@ -290,6 +290,8 @@ iota.cssはbaseテーマなら標準で読み込んでいるため、テーマ�
 }
 </code></pre>
 
+<p>※frとは、CSS Grid用の単位。相対的割合を自動で適用する指定方法。</p>
+
 <h3 id="実践課題1">実践課題1</h3>
 
 <p>iota.cssを使って、スマホで２つ、タブレットで３つ、大タブレットで４つ、PCで5つ表示されるカラムを作成する</p>
@@ -474,6 +476,8 @@ iota.cssはbaseテーマなら標準で読み込んでいるため、テーマ�
 
 <h3 id="repeat">repeat</h3>
 
+<p>同じものを繰り返す時に、繰り返す数とサイズを指定して楽できる</p>
+
 <pre><code class="language-css">.grid-custom{
     grid-gap:1rem;
     --template-cols-xs:1fr;
@@ -484,9 +488,279 @@ iota.cssはbaseテーマなら標準で読み込んでいるため、テーマ�
 }
 </code></pre>
 
+<p>上のコードは下に書き換えられる</p>
+
+<pre><code class="language-css">.grid-custom{
+    grid-gap:1rem;
+    --template-cols-xs:1fr;
+    --template-cols-sm:1fr;
+    --template-cols-md:repeat(2,1fr);
+    --template-cols-lg:repeat(3,1fr);
+    --template-cols-xl:repeat(4,1fr);
+}
+</code></pre>
+
 <h4 id="auto-fit">auto-fit</h4>
 
+<p>repeatにちょっとコードを追加すると、自動でサイズを調整してくれる</p>
+
+<pre><code class="language-css">.grid-custom{
+    grid-gap:1rem;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+}
+</code></pre>
+
+<p>上のコードだけで、要素数に応じて自動的に200px~の範囲で余白を埋めてくれる。<br />
+例えば、要素数が3でwidthが</p>
+
+<ul>
+<li>200pxなら１つ(ヨコ200px)</li>
+<li>300pxなら１つ(ヨコ300px)</li>
+<li>400pxなら２つ(ヨコ200px)</li>
+<li>500pxなら２つ(ヨコ250px)</li>
+<li>600pxなら３つ(ヨコ200px)</li>
+<li>700pxなら３つ(ヨコ233px)</li>
+<li>800pxなら３つ(ヨコ266px)</li>
+<li>900pxなら３つ(ヨコ300px)</li>
+</ul>
+
+<p>といった感じ。<br />
+以下サンプル</p>
+
+<div class="grid grid-3 main_content" style="grid-template-columns:repeat(auto-fit,minmax(200px,1fr));">
+    <div class="main_card" style="background-color:var(--main-color);">
+        <img src="https://haruharuharukichi.github.io/so-thin/images/img1.jpeg" class="card_img" style="height:200px">
+        <div class="card_body">
+            <h6 class="card_title" style="font-size:1.25rem">title</h6>
+            <p>card</p>
+        </div>
+    </div>
+    <div class="main_card" style="background-color:var(--main-color);">
+        <img src="https://haruharuharukichi.github.io/so-thin/images/img1.jpeg" class="card_img" style="height:200px">
+        <div class="card_body">
+            <h6 class="card_title" style="font-size:1.25rem">title</h6>
+            <p>card</p>
+        </div>
+    </div>
+    <div class="main_card" style="background-color:var(--main-color);">
+        <img src="https://haruharuharukichi.github.io/so-thin/images/img1.jpeg" class="card_img" style="height:200px">
+        <div class="card_body">
+            <h6 class="card_title" style="font-size:1.25rem">title</h6>
+            <p>card</p>
+        </div>
+    </div>
+    <div class="main_card" style="background-color:var(--main-color);">
+        <img src="https://haruharuharukichi.github.io/so-thin/images/img1.jpeg" class="card_img" style="height:200px">
+        <div class="card_body">
+            <h6 class="card_title" style="font-size:1.25rem">title</h6>
+            <p>card</p>
+        </div>
+    </div>
+</div>
+
 <h4 id="auto-fill">auto-fill</h4>
+
+<p>repeatにちょっとコードを追加すると、自動で要素を追加してくれる<br />
+空間を埋めるために、auto-fitはサイズを調整する（fitさせる）が、auto-fillは要素で埋める(fillする)<br />
+簡単な話、auto-fitは要素の数は変わらないが、auto-fillでは空白のグリッドを創って対処する</p>
+
+<pre><code class="language-css">.grid-custom{
+    grid-gap:1rem;
+    grid-template-columns:repeat(auto-fill,minmax(200px,1fr));
+}
+</code></pre>
+
+<p>上のコードだけで、サイズに応じて自動的に200px~の範囲で余白を埋めてくれる。<br />
+例えば、要素数が3でwidthが</p>
+
+<ul>
+<li>200pxなら１つ(ヨコ200px)</li>
+<li>300pxなら１つ(ヨコ300px)</li>
+<li>400pxなら２つ(ヨコ200px)</li>
+<li>500pxなら２つ(ヨコ250px)</li>
+<li>600pxなら３つ(ヨコ200px)</li>
+<li>700pxなら３つ(ヨコ233px)</li>
+<li>800pxなら４つ(ヨコ200px)</li>
+<li>900pxなら４つ(ヨコ225px)</li>
+</ul>
+
+<p>といった感じ。fitではグリッドの数は要素数を超えない（3以上にならない）が、fillでは平気で４とか５とか行く<br />
+以下サンプル</p>
+
+<div class="grid grid-3 main_content" style="grid-template-columns:repeat(auto-fill,minmax(200px,1fr));">
+    <div class="main_card" style="background-color:var(--main-color);">
+        <img src="https://haruharuharukichi.github.io/so-thin/images/img1.jpeg" class="card_img" style="height:200px">
+        <div class="card_body">
+            <h6 class="card_title" style="font-size:1.25rem">title</h6>
+            <p>card</p>
+        </div>
+    </div>
+    <div class="main_card" style="background-color:var(--main-color);">
+        <img src="https://haruharuharukichi.github.io/so-thin/images/img1.jpeg" class="card_img" style="height:200px">
+        <div class="card_body">
+            <h6 class="card_title" style="font-size:1.25rem">title</h6>
+            <p>card</p>
+        </div>
+    </div>
+    <div class="main_card" style="background-color:var(--main-color);">
+        <img src="https://haruharuharukichi.github.io/so-thin/images/img1.jpeg" class="card_img" style="height:200px">
+        <div class="card_body">
+            <h6 class="card_title" style="font-size:1.25rem">title</h6>
+            <p>card</p>
+        </div>
+    </div>
+</div>
+
+<h3 id="配置選択">配置選択</h3>
+
+<p>二次元的に配置できるがゆえに、子要素の配置も好きにいじれる<br />
+方法は大きく分けて２つ、数字で指定するかエリアで指定するか</p>
+
+<p><strong>数字で指定する場合</strong></p>
+
+<pre><code class="language-css">.grid-custom{
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr;
+}
+.grid-custom &gt; *:nth-of-type(1){
+    grid-column:2;
+    grid-row:3;
+}
+.grid-custom &gt; *:nth-of-type(2){
+    grid-column:1;
+    grid-row:1;
+}
+.grid-custom &gt; *:nth-of-type(3){
+    grid-column:3;
+    grid-row:2;
+}
+</code></pre>
+
+<p>実装したらこんな感じ
+<div class="grid grid-3 main_content" style="grid-template-columns:repeat(auto-fit,minmax(200px,1fr));">
+    <div class="main_card" style="grid-column:2;grid-row:3;background-color:var(--main-color);">
+        <img src="https://haruharuharukichi.github.io/so-thin/images/img1.jpeg" class="card_img" style="height:200px">
+        <div class="card_body">
+            <h6 class="card_title" style="font-size:1.25rem">1つめ</h6>
+            <p>grid-column:2;
+    grid-row:3;</p>
+        </div>
+    </div>
+    <div class="main_card" style="grid-column:1;grid-row:1;background-color:var(--main-color);">
+        <img src="https://haruharuharukichi.github.io/so-thin/images/img1.jpeg" class="card_img" style="height:200px">
+        <div class="card_body">
+            <h6 class="card_title" style="font-size:1.25rem">２つめ</h6>
+            <p>grid-column:1;
+    grid-row:1;</p>
+        </div>
+    </div>
+    <div class="main_card" style="grid-column:3;grid-row:2;background-color:var(--main-color);">
+        <img src="https://haruharuharukichi.github.io/so-thin/images/img1.jpeg" class="card_img" style="height:200px">
+        <div class="card_body">
+            <h6 class="card_title" style="font-size:1.25rem">３つめ</h6>
+            <p>grid-column:3;
+    grid-row:2;</p>
+        </div>
+    </div>
+</div></p>
+
+<hr />
+
+<p><strong>エリアで指定する場合</strong></p>
+
+<p>エリア名は任意（何でもいい）</p>
+
+<pre><code class="language-css">.grid-custom{
+    grid-template:
+    'one-one one-two one-three' 1fr
+    'two-one two-two two-three' 1fr
+    /1fr 1fr 1fr;
+    /*これもアリ
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr;
+    grid-template-areas:
+        &quot;one-one one-two one-three&quot;
+        &quot;two-one two-two two-three&quot;;
+    */
+}
+.grid-custom &gt; *:nth-of-type(1){
+    grid-area: 2の3;
+}
+.grid-custom &gt; *:nth-of-type(2){
+    grid-area: 1の1;
+}
+.grid-custom &gt; *:nth-of-type(3){
+    grid-area: 3の2;
+}
+</code></pre>
+
+<p>実装したらこんな感じ
+<div class="grid grid-3 main_content" style="grid-template:
+    'one-one one-two one-three' 1fr
+    'two-one two-two two-three' 1fr
+    /1fr 1fr 1fr;">
+    <div class="main_card" style="grid-area: two-three;background-color:var(--main-color);">
+        <img src="https://haruharuharukichi.github.io/so-thin/images/img1.jpeg" class="card_img" style="height:200px">
+        <div class="card_body">
+            <h6 class="card_title" style="font-size:1.25rem">1つめ</h6>
+            <p>2の3</p>
+        </div>
+    </div>
+    <div class="main_card" style="grid-area: one-one;background-color:var(--main-color);">
+        <img src="https://haruharuharukichi.github.io/so-thin/images/img1.jpeg" class="card_img" style="height:200px">
+        <div class="card_body">
+            <h6 class="card_title" style="font-size:1.25rem">２つめ</h6>
+            <p>1の1</p>
+        </div>
+    </div>
+    <div class="main_card" style="grid-area: two-two;background-color:var(--main-color);">
+        <img src="https://haruharuharukichi.github.io/so-thin/images/img1.jpeg" class="card_img" style="height:200px">
+        <div class="card_body">
+            <h6 class="card_title" style="font-size:1.25rem">３つめ</h6>
+            <p>3の2</p>
+        </div>
+    </div>
+</div></p>
+
+<h3 id="ie11対応">IE11対応</h3>
+
+<p>IEではCSS Gridは使えはするものの、自動配置が利かない。<br />
+つまり、全て手動で配置する必要がある。<br />
+しかも上記のエリアも効かないのないない尽くし<br />
+メディアクエリで対応しよう　</p>
+
+<pre><code class="language-css">/*ie専用設定*/
+@media all and (-ms-high-contrast: none){
+	.grid-1{
+		-ms-grid-columns: 100%;
+	}
+	.grid-3{
+		-ms-grid-columns:1fr 1fr 1fr;
+	}
+	.grid &gt; *{
+		margin: 1rem;
+	}
+	.grid-3 &gt; *:nth-child(2n){
+		-ms-grid-column:2;
+	}
+	.grid-3 &gt; *:nth-child(3n){
+		-ms-grid-column:3;
+	}
+	.grid-1 &gt; *:nth-child(2){
+		-ms-grid-row:2;
+	}
+	.grid-1 &gt; *:nth-child(3){
+		-ms-grid-row:3;
+	}
+}
+</code></pre>
+
+<h2 id="参考資料">参考資料</h2>
+
+<p><a href="https://qiita.com/kura07/items/e633b35e33e43240d363">grid layout</a><br />
+<a href="https://hacknote.jp/archives/26960/">fr</a><br />
+<a href="https://www.webprofessional.jp/difference-between-auto-fill-and-auto-fit/">autofit autofill</a><br />
+<a href="https://coliss.com/articles/build-websites/operation/css/how-to-use-minmax.html">minmax</a></p>
 
 </main>
 <footer role="contentinfo" class="inline-center footer_wrapper">@2019~ haruki kawashita</footer>
