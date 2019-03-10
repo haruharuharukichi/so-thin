@@ -625,6 +625,18 @@ iota.cssはbaseテーマなら標準で読み込んでいるため、テーマ�
 .grid-custom &gt; *:nth-of-type(1){
     grid-column:2;
     grid-row:3;
+    /*iota.cssでの指定も可能
+    --col-xs:1;
+    --col-sm:1;
+    --col-md:2;
+    --col-lg:2;
+    --col-xl:2;
+    --row-xs:1;
+    --row-sm:1;
+    --row-md:3;
+    --row-lg:3;
+    --row-xl:3;
+    */
 }
 .grid-custom &gt; *:nth-of-type(2){
     grid-column:1;
@@ -754,6 +766,46 @@ iota.cssはbaseテーマなら標準で読み込んでいるため、テーマ�
 	}
 }
 </code></pre>
+
+<h3 id="実践課題3">実践課題3</h3>
+
+<p>以下を再現<br />
+条件</p>
+
+<ul>
+<li>auto-fitで最小150px</li>
+<li>配置はiota.cssで数値指定</li>
+<li>画像は入れなくても良し</li>
+<li>命名規則を採用</li>
+<li>IE11にも対応させる</li>
+</ul>
+
+<div class="grid grid-3 main_content" style="grid-template:
+    'one-one one-two one-three' 1fr
+    'two-one two-two two-three' 1fr
+    /1fr 1fr 1fr;">
+    <div class="main_card" style="grid-area: two-three;background-color:var(--main-color);">
+        <img src="https://haruharuharukichi.github.io/so-thin/images/img1.jpeg" class="card_img" style="height:200px">
+        <div class="card_body">
+            <h6 class="card_title" style="font-size:1.25rem">1つめ</h6>
+            <p>2の3</p>
+        </div>
+    </div>
+    <div class="main_card" style="grid-area: one-one;background-color:var(--main-color);">
+        <img src="https://haruharuharukichi.github.io/so-thin/images/img1.jpeg" class="card_img" style="height:200px">
+        <div class="card_body">
+            <h6 class="card_title" style="font-size:1.25rem">２つめ</h6>
+            <p>1の1</p>
+        </div>
+    </div>
+    <div class="main_card" style="grid-area: two-two;background-color:var(--main-color);">
+        <img src="https://haruharuharukichi.github.io/so-thin/images/img1.jpeg" class="card_img" style="height:200px">
+        <div class="card_body">
+            <h6 class="card_title" style="font-size:1.25rem">３つめ</h6>
+            <p>3の2</p>
+        </div>
+    </div>
+</div>
 
 <h2 id="参考資料">参考資料</h2>
 
