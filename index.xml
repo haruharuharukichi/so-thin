@@ -6,10 +6,19 @@
     <description>Recent content on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 09 Mar 2019 13:38:00 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 10 Mar 2019 15:26:42 +0900</lastBuildDate>
     
 	<atom:link href="https://haruharuharukichi.github.io/so-thin/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>html→WordPress</title>
+      <link>https://haruharuharukichi.github.io/so-thin/academy/002/</link>
+      <pubDate>Sun, 10 Mar 2019 15:26:42 +0900</pubDate>
+      
+      <guid>https://haruharuharukichi.github.io/so-thin/academy/002/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>iota.css &amp; naming</title>
