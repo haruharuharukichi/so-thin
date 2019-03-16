@@ -1,24 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>TOP on My New Hugo Site</title>
-    <link>https://haruharuharukichi.github.io/so-thin/components/</link>
-    <description>Recent content in TOP on My New Hugo Site</description>
+    <title>Component on My New Hugo Site</title>
+    <link>https://haruharuharukichi.github.io/so-thin/categories/component/</link>
+    <description>Recent content in Component on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 17 Feb 2019 18:46:12 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 17 Feb 2019 18:47:06 +0900</lastBuildDate>
     
-	<atom:link href="https://haruharuharukichi.github.io/so-thin/components/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://haruharuharukichi.github.io/so-thin/categories/component/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Table</title>
-      <link>https://haruharuharukichi.github.io/so-thin/components/table/</link>
-      <pubDate>Sun, 17 Feb 2019 18:47:18 +0900</pubDate>
-      
-      <guid>https://haruharuharukichi.github.io/so-thin/components/table/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>Navigation</title>
@@ -28,15 +19,6 @@
       <guid>https://haruharuharukichi.github.io/so-thin/components/navigation/</guid>
       <description>Navigation PHPベーシックコード + header.php
 &amp;lt;nav role=&amp;quot;navigation&amp;quot; id=&amp;quot;navbar&amp;quot; class=&amp;quot;grid container navbar_wrapper&amp;quot;&amp;gt; &amp;lt;?php if ( function_exists( &#39;the_custom_logo&#39; ) ) { $custom_logo_id = get_theme_mod( &#39;custom_logo&#39; ); $custom_logo_url = wp_get_attachment_image_url( $custom_logo_id , &#39;full&#39; ); echo &#39;&amp;lt;a class=&amp;quot;flex navbar_brand&amp;quot; href=&amp;quot;&#39; . esc_url( home_url() ) . &#39;&amp;quot; rel=&amp;quot;home&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;navbar_logo&amp;quot; style=&amp;quot;background-image:url(&#39; . esc_url( $custom_logo_url ) . &#39;);&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt;&#39;; } ?&amp;gt; &amp;lt;button class=&amp;quot;navbar_toggler&amp;quot; id=&amp;quot;navbarToggler&amp;quot; type=&amp;quot;button&amp;quot;&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/button&amp;gt; &amp;lt;?php wp_nav_menu( array( &#39;theme_location&#39;=&amp;gt;&#39;Navigation&#39;, &#39;menu_class&#39; =&amp;gt;&#39;navbar_list&#39;, &#39;container&#39; =&amp;gt;false, &#39;items_wrap&#39; =&amp;gt;&#39;&amp;lt;ul class=&amp;quot;%2$s&amp;quot;&amp;gt;%3$s&amp;lt;/ul&amp;gt;&#39;)); ?</description>
-    </item>
-    
-    <item>
-      <title>Link</title>
-      <link>https://haruharuharukichi.github.io/so-thin/components/link/</link>
-      <pubDate>Sun, 17 Feb 2019 18:47:00 +0900</pubDate>
-      
-      <guid>https://haruharuharukichi.github.io/so-thin/components/link/</guid>
-      <description></description>
     </item>
     
     <item>
@@ -88,6 +70,15 @@
       <description>Button 共通HTML,CSS + html
 rel,_btnの前は任意で変更
 &amp;lt;a href=&amp;quot;#&amp;quot; type=&amp;quot;button&amp;quot; rel=&amp;quot;&amp;quot; class=&amp;quot;_btn&amp;quot;&amp;gt;&amp;lt;span&amp;gt;more&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt;   &amp;lt;p&amp;gt;css&amp;lt;/p&amp;gt;  [class*=&amp;quot;_btn&amp;quot;],[class*=&amp;quot;_btn&amp;quot;]:hover{ display:inline-block; padding:.5rem; margin:.25rem; color: var(--font-color); text-align:center; text-decoration: none; transition:.3s; } [class*=&amp;quot;_btn&amp;quot;]:hover{ }   &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;h2 class=&amp;quot;main_title&amp;quot;&amp;gt;オーソドックスタイプ&amp;lt;/h2&amp;gt; &amp;lt;div class=&amp;quot;main_code&amp;quot;&amp;gt; &amp;lt;p class=&amp;quot;codepen&amp;quot; data-height=&amp;quot;265&amp;quot; data-theme-id=&amp;quot;0&amp;quot; data-default-tab=&amp;quot;css,result&amp;quot; data-user=&amp;quot;haruharuharukichi&amp;quot; data-slug-hash=&amp;quot;KJvQRy&amp;quot; style=&amp;quot;height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;&amp;quot; data-pen-title=&amp;quot;Button&amp;quot;&amp;gt; &amp;lt;span&amp;gt;See the Pen &amp;lt;a href=&amp;quot;https://codepen.io/haruharuharukichi/pen/KJvQRy/&amp;quot;&amp;gt; Button&amp;lt;/a&amp;gt; by haruharuharukichi (&amp;lt;a href=&amp;quot;https://codepen.</description>
+    </item>
+    
+    <item>
+      <title>TOP</title>
+      <link>https://haruharuharukichi.github.io/so-thin/components/</link>
+      <pubDate>Sun, 17 Feb 2019 18:46:12 +0900</pubDate>
+      
+      <guid>https://haruharuharukichi.github.io/so-thin/components/</guid>
+      <description>コンポーネント一覧</description>
     </item>
     
   </channel>
