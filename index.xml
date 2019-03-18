@@ -17,7 +17,49 @@
       <pubDate>Sun, 10 Mar 2019 15:26:42 +0900</pubDate>
       
       <guid>https://haruharuharukichi.github.io/so-thin/academy/002/</guid>
-      <description></description>
+      <description>マインドマップの使い方とテーマの作成方法 今回の目的  マインドマップでサイトマップを作れるようになる WordPressテーマの作り方（流れ）を理解できる・作れる  マイントマップ サイトマップは原則マインドマップで作成する
+理由はユーザーフローが分かり易いから
+マインドマップとは、地図みたいなもの
+使い方  http://jp.xmind.net/download/ からソフトをDL https://haruharuharukichi.github.io/so-thin/images/sitemap.xmind でテンプレをDL テンプレファイルを開いていじる  大体の要素は右クリックかダブルクリックで変更できる
+サブ 【セクション1 ex.】みたいなのを追加する場合は、一番大きい中心トピックを右クリックし、挿入→サブトピック
+ラベル 「目的：」の部分は親要素の右クリックから挿入→ラベル
+矢印 要素を繋げる矢印を書く場合は、右クリック→挿入→関連
+文字を入れる時はダブルクリック
+以上。
+本当に簡単なので、各自いじってみよう
+テーマ作成 HTMLからWordPressテーマに落とし込む方法
+構造 公式解説
+HTML作成 なにはともあれ、HTMLが無いとお話しにならないので作りましょう。
+トップページ まずデザインのベースになるトップページをつくります
+この時のフォルダ構造(lib以下は任意)
+root
+|-index.html
+|-style.css
+|-lib
+|-images
+|-css
+|-js
+固定ページ 次に、トップページのデザインに合わせて固定ページデザインを１つ以上つくります
+規模が大きい時は予め幾つか用意したりする
+固定ページのテンプレートを増やしても基本めんどくささしかないので、たいていの場合大枠用テンプレート一つ+中身はページごとに変える
+ガワは同じで中身だけ変えるイメージ
+この時のフォルダ構造(lib以下は(ry
+root
+|-index.html
+|-page.html
+|-style.css
+|-lib
+|-images
+|-css
+|-js
+投稿ページ ブログ機能を付ける場合でもつけない場合でも、とりあえず投稿ページ用デザインも作っておく
+中身は適当だけど、見出し５くらいまではデザインを作っておいて どうせその内ブログ機能も付けたいとか言い出すから。
+この時のフォルダ構造(ry
+root
+|-index.html
+|-page.html
+|-post.html
+|-style.css</description>
     </item>
     
     <item>
@@ -147,7 +189,10 @@ MORE      お見合いのルールとマナー テキストテキストテキス
       <pubDate>Fri, 01 Mar 2019 18:01:41 +0900</pubDate>
       
       <guid>https://haruharuharukichi.github.io/so-thin/todo/</guid>
-      <description>やりたいことリスト マーケティングコンサル（サイトのプラットフォーム化） APIでサイト管理 Core Reporting APIとSearch Console API使って顧客のアナリティクスとサーチコンソールのデータを取り出して、コンサルしたい
+      <description>やりたいことリスト マーケティングコンサル（サイトのプラットフォーム化） 単発で終わるフロービジネスでなく、積み重ねられるストックビジネスをやりたい
+制作自体は安く請けて、その後の運用で毎月金を貰うようなモデル。
+運用内容は以下の通り
+APIでサイト管理 Core Reporting APIとSearch Console API使って顧客のアナリティクスとサーチコンソールのデータを取り出して、コンサルしたい
 UI最適化 上記と同じく、サイト内部でのユーザーの動きと感情をコンサル
 トータルコーディネート SEOだけじゃなくて外部からの流入・内部での動線・外部への流出をトータルでコーディネートして、顧客にとって最適なシステムを作りたい（ネットワーク化に対応したい）
 コンテンツマネジメント コンテンツマーケが主流の現在に対応出来る様、顧客のコンテンツの質を高めたい
@@ -244,7 +289,9 @@ schema.org導入 リッチスニペットに完全対応したい
       <guid>https://haruharuharukichi.github.io/so-thin/components/button/</guid>
       <description>Button 共通HTML,CSS + html
 rel,_btnの前は任意で変更
-&amp;lt;a href=&amp;quot;#&amp;quot; type=&amp;quot;button&amp;quot; rel=&amp;quot;&amp;quot; class=&amp;quot;_btn&amp;quot;&amp;gt;&amp;lt;span&amp;gt;more&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt;   &amp;lt;p&amp;gt;css&amp;lt;/p&amp;gt;  [class*=&amp;quot;_btn&amp;quot;],[class*=&amp;quot;_btn&amp;quot;]:hover{ display:inline-block; padding:.5rem; margin:.25rem; color: var(--font-color); text-align:center; text-decoration: none; transition:.3s; } [class*=&amp;quot;_btn&amp;quot;]:hover{ }   &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;h2 class=&amp;quot;main_title&amp;quot;&amp;gt;オーソドックスタイプ&amp;lt;/h2&amp;gt; &amp;lt;div class=&amp;quot;main_code&amp;quot;&amp;gt; &amp;lt;p class=&amp;quot;codepen&amp;quot; data-height=&amp;quot;265&amp;quot; data-theme-id=&amp;quot;0&amp;quot; data-default-tab=&amp;quot;css,result&amp;quot; data-user=&amp;quot;haruharuharukichi&amp;quot; data-slug-hash=&amp;quot;KJvQRy&amp;quot; style=&amp;quot;height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;&amp;quot; data-pen-title=&amp;quot;Button&amp;quot;&amp;gt; &amp;lt;span&amp;gt;See the Pen &amp;lt;a href=&amp;quot;https://codepen.io/haruharuharukichi/pen/KJvQRy/&amp;quot;&amp;gt; Button&amp;lt;/a&amp;gt; by haruharuharukichi (&amp;lt;a href=&amp;quot;https://codepen.</description>
+&amp;lt;a href=&amp;quot;#&amp;quot; type=&amp;quot;button&amp;quot; rel=&amp;quot;&amp;quot; class=&amp;quot;_btn&amp;quot;&amp;gt;&amp;lt;span&amp;gt;more&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt;  css
+[class*=&amp;quot;_btn&amp;quot;],[class*=&amp;quot;_btn&amp;quot;]:hover{ display:inline-block; padding:.5rem; margin:.25rem; color: var(--font-color); text-align:center; text-decoration: none; transition:.3s; } [class*=&amp;quot;_btn&amp;quot;]:hover{ }    
+オーソドックスタイプ See the Pen Button by haruharuharukichi (@haruharuharukichi) on CodePen.</description>
     </item>
     
     <item>

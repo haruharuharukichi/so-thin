@@ -69,7 +69,9 @@
       <guid>https://haruharuharukichi.github.io/so-thin/components/button/</guid>
       <description>Button 共通HTML,CSS + html
 rel,_btnの前は任意で変更
-&amp;lt;a href=&amp;quot;#&amp;quot; type=&amp;quot;button&amp;quot; rel=&amp;quot;&amp;quot; class=&amp;quot;_btn&amp;quot;&amp;gt;&amp;lt;span&amp;gt;more&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt;   &amp;lt;p&amp;gt;css&amp;lt;/p&amp;gt;  [class*=&amp;quot;_btn&amp;quot;],[class*=&amp;quot;_btn&amp;quot;]:hover{ display:inline-block; padding:.5rem; margin:.25rem; color: var(--font-color); text-align:center; text-decoration: none; transition:.3s; } [class*=&amp;quot;_btn&amp;quot;]:hover{ }   &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;h2 class=&amp;quot;main_title&amp;quot;&amp;gt;オーソドックスタイプ&amp;lt;/h2&amp;gt; &amp;lt;div class=&amp;quot;main_code&amp;quot;&amp;gt; &amp;lt;p class=&amp;quot;codepen&amp;quot; data-height=&amp;quot;265&amp;quot; data-theme-id=&amp;quot;0&amp;quot; data-default-tab=&amp;quot;css,result&amp;quot; data-user=&amp;quot;haruharuharukichi&amp;quot; data-slug-hash=&amp;quot;KJvQRy&amp;quot; style=&amp;quot;height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;&amp;quot; data-pen-title=&amp;quot;Button&amp;quot;&amp;gt; &amp;lt;span&amp;gt;See the Pen &amp;lt;a href=&amp;quot;https://codepen.io/haruharuharukichi/pen/KJvQRy/&amp;quot;&amp;gt; Button&amp;lt;/a&amp;gt; by haruharuharukichi (&amp;lt;a href=&amp;quot;https://codepen.</description>
+&amp;lt;a href=&amp;quot;#&amp;quot; type=&amp;quot;button&amp;quot; rel=&amp;quot;&amp;quot; class=&amp;quot;_btn&amp;quot;&amp;gt;&amp;lt;span&amp;gt;more&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt;  css
+[class*=&amp;quot;_btn&amp;quot;],[class*=&amp;quot;_btn&amp;quot;]:hover{ display:inline-block; padding:.5rem; margin:.25rem; color: var(--font-color); text-align:center; text-decoration: none; transition:.3s; } [class*=&amp;quot;_btn&amp;quot;]:hover{ }    
+オーソドックスタイプ See the Pen Button by haruharuharukichi (@haruharuharukichi) on CodePen.</description>
     </item>
     
     <item>

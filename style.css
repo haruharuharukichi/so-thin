@@ -493,14 +493,17 @@ main h1{
 main h2{
 	padding: .5rem;
 	border: 1px solid var(--font-color);
+	margin-top:10vh;
 }
 main h3{
 	padding: 0 .5rem;
 	border-bottom: 1px solid var(--font-color);
+	margin-top:8vh;
 }
 main h4{
 	padding: .5rem;
 	border-left: 1px solid var(--font-color);
+	margin-top:6vh;
 }
 main h5{
 	padding: .5rem;
