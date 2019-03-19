@@ -254,8 +254,8 @@
 <pre><code class="language-php">//投稿データ
 &lt;article itemscope itemtype=&quot;https://schema.org/BlogPosting&quot;&gt;
 	&lt;h1 itemprop=&quot;headline&quot;&gt;タイトル&lt;/h1&gt;
-	&lt;time itemprop=&quot;dateCreated datePublished&quot; datetime=&quot;&lt;?php the_modified_time('c'); ?&gt;&quot;&gt;&lt;?php the_modified_time('Y/m/j'); ?&gt;&lt;/time&gt;
-	&lt;time itemprop=&quot;dateModified&quot; datetime=&quot;&lt;?php the_time('c') ?&gt;&quot;&gt;&lt;?php the_time('Y/m/j') ?&gt;&lt;/time&gt;
+    &lt;time itemprop=&quot;dateCreated datePublished&quot; datetime=&quot;&lt;?php the_time('c') ?&gt;&quot;&gt;&lt;?php the_time('Y/m/j') ?&gt;&lt;/time&gt;
+    &lt;time itemprop=&quot;dateModified&quot; datetime=&quot;&lt;?php the_modified_time('c'); ?&gt;&quot;&gt;&lt;?php the_modified_time('Y/m/j'); ?&gt;&lt;/time&gt;
 	&lt;div itemprop=&quot;articleBody&quot;&gt;&lt;?php the_content(); ?&gt;&lt;/div&gt;
 &lt;/article&gt;
 </code></pre>
