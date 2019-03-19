@@ -946,6 +946,188 @@ function create_post_type() {
 add_action( 'init', 'create_post_type' );
 </code></pre>
 
+<h2 id="投稿のカテゴリー選択をラジオボタンに変更">投稿のカテゴリー選択をラジオボタンに変更</h2>
+
+<pre><code class="language-php">function change_category_to_radio() {
+?&gt;
+&lt;script&gt;
+jQuery(function($) {
+    $('#categorychecklist input[type=checkbox]').each(function() {
+        $(this).replaceWith($(this).clone().attr('type', 'radio'));
+    });
+    // 「新規カテゴリーを追加」を非表示
+    $('#category-adder').hide();
+    // 「よく使うもの」を非表示
+    $('#category-tabs').hide();
+});
+&lt;/script&gt;
+&lt;?php
+}
+add_action( 'admin_head-post-new.php', 'change_category_to_radio' );
+add_action( 'admin_head-post.php', 'change_category_to_radio' );
+</code></pre>
+
+<h2 id="関数をショートコード化">関数をショートコード化</h2>
+
+<p>記事内で使う場合は<code>[ショートコード名]</code><br />
+phpファイル内で使う場合は<code>echo do_shortcode('[ショートコード名]');</code></p>
+
+<pre><code class="language-php">add_shortcode(&quot;ショートコード名&quot;, &quot;関数名&quot;);
+</code></pre>
+
+<h2 id="ターム-カスタムタクソノミー-のリンクを取得">ターム(&amp;カスタムタクソノミー)のリンクを取得</h2>
+
+<p>使い方：取得したい場所でショートコードを実行</p>
+
+<pre><code class="language-php">function custom_taxonomies_terms_links($atts, $content = null ) {
+    extract(shortcode_atts(array(
+      &quot;full&quot; =&gt; false,
+    ), $atts));
+  // その投稿から投稿タイプを取得
+  $post_type = 'member';
+
+  // その投稿タイプからタクソノミーを取得
+  $taxonomies = get_object_taxonomies( $post_type, 'objects' );
+
+  $out = array();
+  if ($full) {
+      foreach ( $taxonomies as $taxonomy_slug =&gt; $taxonomy ){
+
+        // 全てのタームを取得
+        $terms = get_terms( $taxonomy_slug );
+
+        if ( $terms ) {
+          $out[] = '&lt;h3&gt;' . $taxonomy-&gt;label . 'で探す&lt;/h3&gt;&lt;ul&gt;';
+          foreach ( $terms as $term ) {
+            $out[] = '&lt;li&gt;&lt;a href=&quot;'.get_term_link($term).'&quot; class=&quot;main_link&quot;&gt;'.$term-&gt;name.'&lt;/a&gt;&lt;/li&gt;';
+          }
+          $out[] = &quot;&lt;/ul&gt;\n&quot;;
+        }
+      }
+  }else{
+      foreach ( $taxonomies as $taxonomy_slug =&gt; $taxonomy ){
+
+        // 投稿に付けられたタームを取得
+        $terms = get_the_terms( $post-&gt;ID, $taxonomy_slug );
+
+        if ($terms) {
+          $out[] = &quot;&lt;ul&gt;&lt;li&gt;&lt;h6&gt;&quot; . $taxonomy-&gt;label . &quot; : &lt;/h6&gt;&lt;/li&gt;&quot;;
+          foreach ( $terms as $term ) {
+            $out[] = '&lt;li&gt;&lt;a href=&quot;'.get_term_link( $term-&gt;slug, $taxonomy_slug ).'&quot; class=&quot;main_link&quot;&gt;'.$term-&gt;name.&quot;&lt;/a&gt;&lt;/li&gt;\n&quot;;
+          }
+          $out[] = &quot;&lt;/ul&gt;\n&quot;;
+        }
+      }
+  }
+
+  return implode('', $out );
+}
+add_shortcode(&quot;getTaxonomyLinks&quot;, &quot;custom_taxonomies_terms_links&quot;);
+</code></pre>
+
+<h2 id="ショートコードで投稿記事一覧呼び出し">ショートコードで投稿記事一覧呼び出し</h2>
+
+<p>記事（the_content）内で呼び出したい場合や、singular.phpで関連記事を呼ぶ場合に便利<br />
+content.phpにパーツを作っておくこと、投稿はカテゴリを付けていることが条件(適時変更して使うべし)</p>
+
+<pre><code class="language-php">function getCatItems($atts, $content = null ) {
+    extract(shortcode_atts(array(
+      &quot;num&quot; =&gt; '5',
+      &quot;cat&quot; =&gt; 'Uncategorized',
+      &quot;order&quot;=&gt; 'date',
+      &quot;type&quot;=&gt; 'post',
+      &quot;parent&quot;=&gt; null,
+      &quot;taxonomy&quot;=&gt;'member_taxonomy',
+      &quot;term&quot;=&gt; 'marriage-agency'
+    ), $atts));
+    
+    // 処理中のpost変数をoldpost変数に退避
+    global $post;
+    $oldpost = $post;
+    
+    // カテゴリーの記事データ取得
+    $catid=get_cat_ID($cat);
+    $div_class =&quot;&quot;;
+    switch (true) {
+        case $type === 'post':
+            $args = array(
+                'posts_per_page'   =&gt; $num,
+                'category'         =&gt; $catid,
+                'orderby'          =&gt; $order,
+                'post_type'        =&gt; $type,
+                'post_parent'      =&gt; $parent,
+                'post_status'      =&gt; 'publish',
+            );
+            $div_class =&quot;main_content columns link single&quot;;
+            break;
+
+        case $type === 'page':
+            $args = array(
+                'posts_per_page'   =&gt; $num,
+                'orderby'          =&gt; $order,
+                'post_type'        =&gt; $type,
+                'post_parent'      =&gt; $parent,
+                'post_status'      =&gt; 'publish',
+            );
+            $div_class =&quot;main_content columns link page&quot;;
+            break;
+        default:
+            break;
+    }
+    
+    $posts = get_posts($args);
+    
+    ob_start();
+    if($posts) {
+        // 記事がある場合↓
+        echo '&lt;div class=&quot;'.$div_class.'&quot;&gt;';
+        // 取得した記事の個数分繰り返す
+        foreach($posts as $post) :
+             get_template_part('content');
+        endforeach;
+        
+        echo '&lt;/div&gt;';
+    } else {
+        // 記事がない場合↓
+        echo '&lt;p&gt;記事がありません&lt;/p&gt;';
+    }
+    
+    return ob_get_clean();
+    // oldpost変数をpost変数に戻す
+    $post = $oldpost;
+    
+}
+// 呼び出しの指定
+add_shortcode(&quot;getCategoryArticle&quot;, &quot;getCatItems&quot;);
+</code></pre>
+
+<p>singular.phpで効率的に回す方法</p>
+
+<pre><code class="language-php">$metas = array();
+if(is_single()){
+    $metas = array(
+        'number' =&gt; 6,
+        'type' =&gt; 'post',
+        'parent'=&gt; '',
+    );
+}else{
+    $metas = array(
+        'number' =&gt; 3,
+        'type' =&gt; 'page',
+        'parent'=&gt; $post-&gt;post_parent,
+    );
+}
+
+$catid = &quot;&quot;;
+foreach(( get_the_category($post-&gt;ID) ) as $cat) {
+    $catid = $cat-&gt;cat_ID ;
+    break ;
+}
+echo do_shortcode('[getCategoryArticle num=&quot;'.$metas[&quot;number&quot;].'&quot; cat=&quot;'.$catid.'&quot; order=&quot;rand&quot; type=&quot;'.$metas[&quot;type&quot;].'&quot; parent=&quot;'.$metas[&quot;parent&quot;].'&quot;]'); 
+</code></pre>
+
+<pre><code class="language-php"></code></pre>
+
 </main>
 <footer role="contentinfo" class="inline-center footer_wrapper">@2019~ haruki kawashita</footer>
 </div>
