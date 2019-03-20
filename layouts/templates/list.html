@@ -1,0 +1,26 @@
+{{ partial "header.html" . }}
+<aside role="complementary" class="sidebar_wrapper">
+    <ul>
+        {{ range .Pages }}
+        <li>
+            <a href="{{.Permalink}}">{{ path.Base .Permalink}}</a>
+        </li>
+        {{ end }}
+    </ul>
+</aside>
+<aside role="complementary" class="sidebar_wrapper">
+    <div id="toc"></div>
+</aside>
+<main role="main">
+    <ul class="grid grid-3 main_post">
+        {{ range .Pages }}
+        <li class="post_card thumbnail">
+            <a href="{{.Permalink}}" class="post_link">
+                <img src="{{.Permalink}}cap.PNG" alt="capture" class="post_img">
+                <h3 class="post_title">{{ path.Base .Permalink}}</h3>
+            </a>
+        </li>
+        {{ end }}
+    </ul>
+</main>
+{{ partial "footer.html" . }}
