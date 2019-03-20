@@ -5,7 +5,7 @@
     <link>https://haruharuharukichi.github.io/so-thin/</link>
     <description>Recent content on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>jp</language>
     <lastBuildDate>Tue, 19 Mar 2019 17:16:43 +0900</lastBuildDate>
     
 	<atom:link href="https://haruharuharukichi.github.io/so-thin/index.xml" rel="self" type="application/rss+xml" />
@@ -173,14 +173,18 @@ more
       <pubDate>Sun, 03 Mar 2019 12:43:20 +0900</pubDate>
       
       <guid>https://haruharuharukichi.github.io/so-thin/templates/pureslide/</guid>
-      <description>九結会について 加盟団体 お見合いシステム お知らせ 加盟案内             Previous   Next   九州で探そう
-九州で出逢おう
-九州の為の結婚相談所連盟
-九結会   HOME/ABOUT
- 著者：九結会 作成日：2018/08/20 更新日：2018/08/20      ABOUT 九州を結ぶ会、九結会
-     九州のみで完結する相談所連盟 テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-MORE      会員検索システム「Member&amp;rsquo;s」とは テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-MORE      お見合いのルールとマナー テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</description>
+      <description>home about post    サイトタイトル      ABOUT 九州を結ぶ会、九結会
+ 九州のみで完結する相談所連盟 テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+MORE     九州のみで完結する相談所連盟 テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+MORE     九州のみで完結する相談所連盟 テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+MORE      PARTICIPANT 加盟団体
+ 結婚相談所 大規模な相談所から個人経営の相談所まで気軽にご参加いただけます。
+   企業 結婚相談所だけでなく、一般の企業様もご参加いただけます
+   自治体 九結会は自治体の加盟も可能です。
+九州が拠点であることが加盟の条件です。
+    TOPIC 九結会とは
+  代表からの挨拶 「グローバル化が進んでいるからこそ、地元を大切にしたい」
+   自治体・企業の皆さまへ 「九結会は、最新のシステムを使って地域を繋ぐ今までにない結婚相談所連盟です」</description>
     </item>
     
     <item>
@@ -278,7 +282,8 @@ schema.org導入 リッチスニペットに完全対応したい
       <guid>https://haruharuharukichi.github.io/so-thin/components/form/</guid>
       <description>Header PHPベーシックコード + 問い合わせフォーム
 &amp;lt;div class=&amp;quot;form_wrapper&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;form_content&amp;quot;&amp;gt; &amp;lt;label class=&amp;quot;flex&amp;quot;&amp;gt; お名前 (必須) &amp;lt;/label&amp;gt; [text* your-name placeholder&amp;quot;例）山田　太郎&amp;quot;] &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;form_content&amp;quot;&amp;gt; &amp;lt;label class=&amp;quot;flex&amp;quot;&amp;gt;メールアドレス (必須)&amp;lt;/label&amp;gt; [email* your-email placeholder&amp;quot;sample@ao.to&amp;quot;] &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;form_content&amp;quot;&amp;gt; &amp;lt;label class=&amp;quot;flex&amp;quot;&amp;gt;題名&amp;lt;/label&amp;gt; [text your-subject placeholder&amp;quot;バナーについて&amp;quot;] &amp;lt;/div&amp;gt; &amp;lt;div id=&amp;quot;message&amp;quot; class=&amp;quot;form_content&amp;quot;&amp;gt; &amp;lt;label class=&amp;quot;flex&amp;quot;&amp;gt;メッセージ本文&amp;lt;/label&amp;gt; [textarea* your-message placeholder&amp;quot;掲載依頼です&amp;quot;] &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;form_btn&amp;quot;&amp;gt; [submit &amp;quot;送信&amp;quot;] &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt;    
-オーソドックスタイプ See the Pen oVdgeB by haruharuharukichi (@haruharuharukichi) on CodePen.</description>
+オーソドックスタイプ See the Pen oVdgeB by haruharuharukichi (@haruharuharukichi) on CodePen.  
+アプリ型 See the Pen formApp by haruharuharukichi (@haruharuharukichi) on CodePen.</description>
     </item>
     
     <item>
