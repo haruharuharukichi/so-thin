@@ -1,6 +1,6 @@
 baseURL = "https://haruharuharukichi.github.io/so-thin/"
 languageCode = "jp"
-title = "My New Hugo Site"
+title = "so thin"
 publishDir = "docs"
 
 [[menu.main]]

@@ -32,7 +32,7 @@ categories : [ "component" ]
     <label class="flex">メッセージ本文</label>
     [textarea* your-message placeholder"掲載依頼です"]
   </div>
-  <div class="form_btn">
+  <div class="form_content">
     [submit "送信"]
   </div>
 </div>

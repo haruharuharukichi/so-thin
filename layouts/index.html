@@ -18,13 +18,11 @@
     </ul>
     <h2>新着記事</h2>
     <ul>
-        {{ with .GitInfo }}
         {{ range first 5 .Pages.ByLastmod.Reverse }}
         <li>
             <a href="{{.RelPermalink}}" class="main_link">{{.Title}}</a>
             <time>{{.Date.Format "2006-01-02"}}</time>
         </li>
-        {{ end }}
         {{ end }}
     </ul>
 </main>

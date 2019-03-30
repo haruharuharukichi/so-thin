@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://haruharuharukichi.github.io/so-thin/academy/003/</loc>
+    <lastmod>2019-03-25T22:58:35+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://haruharuharukichi.github.io/so-thin/components/basic/</loc>
+    <lastmod>2019-03-24T16:56:47+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://haruharuharukichi.github.io/so-thin/components/slider/</loc>
     <lastmod>2019-03-19T17:16:43+09:00</lastmod>
   </url>
@@ -134,12 +144,6 @@
   </url>
   
   <url>
-    <loc>https://haruharuharukichi.github.io/so-thin/</loc>
-    <lastmod>2019-03-19T17:16:43+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://haruharuharukichi.github.io/so-thin/tags/</loc>
     <priority>0</priority>
   </url>
@@ -147,6 +151,12 @@
   <url>
     <loc>https://haruharuharukichi.github.io/so-thin/templates/</loc>
     <lastmod>2019-03-03T13:22:02+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://haruharuharukichi.github.io/so-thin/</loc>
+    <lastmod>2019-03-25T22:58:35+09:00</lastmod>
     <priority>0</priority>
   </url>
   

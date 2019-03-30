@@ -1,15 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>TOP on My New Hugo Site</title>
+    <title>TOP on so thin</title>
     <link>https://haruharuharukichi.github.io/so-thin/components/</link>
-    <description>Recent content in TOP on My New Hugo Site</description>
+    <description>Recent content in TOP on so thin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>jp</language>
     <lastBuildDate>Sun, 17 Feb 2019 18:46:12 +0900</lastBuildDate>
     
 	<atom:link href="https://haruharuharukichi.github.io/so-thin/components/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Basic</title>
+      <link>https://haruharuharukichi.github.io/so-thin/components/basic/</link>
+      <pubDate>Sun, 24 Mar 2019 16:56:47 +0900</pubDate>
+      
+      <guid>https://haruharuharukichi.github.io/so-thin/components/basic/</guid>
+      <description>基礎設定 コンテナ Grid See the Pen containerGrid by haruharuharukichi (@haruharuharukichi) on CodePen.</description>
+    </item>
     
     <item>
       <title>Slider</title>
@@ -75,7 +84,7 @@
       
       <guid>https://haruharuharukichi.github.io/so-thin/components/form/</guid>
       <description>Header PHPベーシックコード + 問い合わせフォーム
-&amp;lt;div class=&amp;quot;form_wrapper&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;form_content&amp;quot;&amp;gt; &amp;lt;label class=&amp;quot;flex&amp;quot;&amp;gt; お名前 (必須) &amp;lt;/label&amp;gt; [text* your-name placeholder&amp;quot;例）山田　太郎&amp;quot;] &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;form_content&amp;quot;&amp;gt; &amp;lt;label class=&amp;quot;flex&amp;quot;&amp;gt;メールアドレス (必須)&amp;lt;/label&amp;gt; [email* your-email placeholder&amp;quot;sample@ao.to&amp;quot;] &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;form_content&amp;quot;&amp;gt; &amp;lt;label class=&amp;quot;flex&amp;quot;&amp;gt;題名&amp;lt;/label&amp;gt; [text your-subject placeholder&amp;quot;バナーについて&amp;quot;] &amp;lt;/div&amp;gt; &amp;lt;div id=&amp;quot;message&amp;quot; class=&amp;quot;form_content&amp;quot;&amp;gt; &amp;lt;label class=&amp;quot;flex&amp;quot;&amp;gt;メッセージ本文&amp;lt;/label&amp;gt; [textarea* your-message placeholder&amp;quot;掲載依頼です&amp;quot;] &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;form_btn&amp;quot;&amp;gt; [submit &amp;quot;送信&amp;quot;] &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt;    
+&amp;lt;div class=&amp;quot;form_wrapper&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;form_content&amp;quot;&amp;gt; &amp;lt;label class=&amp;quot;flex&amp;quot;&amp;gt; お名前 (必須) &amp;lt;/label&amp;gt; [text* your-name placeholder&amp;quot;例）山田　太郎&amp;quot;] &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;form_content&amp;quot;&amp;gt; &amp;lt;label class=&amp;quot;flex&amp;quot;&amp;gt;メールアドレス (必須)&amp;lt;/label&amp;gt; [email* your-email placeholder&amp;quot;sample@ao.to&amp;quot;] &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;form_content&amp;quot;&amp;gt; &amp;lt;label class=&amp;quot;flex&amp;quot;&amp;gt;題名&amp;lt;/label&amp;gt; [text your-subject placeholder&amp;quot;バナーについて&amp;quot;] &amp;lt;/div&amp;gt; &amp;lt;div id=&amp;quot;message&amp;quot; class=&amp;quot;form_content&amp;quot;&amp;gt; &amp;lt;label class=&amp;quot;flex&amp;quot;&amp;gt;メッセージ本文&amp;lt;/label&amp;gt; [textarea* your-message placeholder&amp;quot;掲載依頼です&amp;quot;] &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;form_content&amp;quot;&amp;gt; [submit &amp;quot;送信&amp;quot;] &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt;    
 オーソドックスタイプ See the Pen oVdgeB by haruharuharukichi (@haruharuharukichi) on CodePen.  
 アプリ型 See the Pen formApp by haruharuharukichi (@haruharuharukichi) on CodePen.</description>
     </item>
