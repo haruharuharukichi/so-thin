@@ -6,10 +6,19 @@
     <description>Recent content on so thin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>jp</language>
-    <lastBuildDate>Mon, 25 Mar 2019 22:58:35 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 31 Mar 2019 14:42:42 +0900</lastBuildDate>
     
 	<atom:link href="https://haruharuharukichi.github.io/so-thin/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>WP サブディレクトリ　インストール</title>
+      <link>https://haruharuharukichi.github.io/so-thin/install/</link>
+      <pubDate>Sun, 31 Mar 2019 14:42:42 +0900</pubDate>
+      
+      <guid>https://haruharuharukichi.github.io/so-thin/install/</guid>
+      <description> Xサーバーにログイン 「「「「「サブディレクトリに」」」」」WP簡単インストール noindex,nofollowタグをheadに追加（テーマにベタ打ちOK） 頑張る 見てもらう 許可出たらクライアント環境にWPインストール All-in-One WP Migrationとか使ってお引越し noindex,nofollowタグを削除 確認してもらう 楽な作業にニコニコしながら終わり  画像DE見よう </description>
+    </item>
     
     <item>
       <title>GitHub pagesとデザイン</title>

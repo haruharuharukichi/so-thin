@@ -9,18 +9,6 @@
 	<meta name="author" content="Haruki Kawashita">
 	<meta name="robots" content="noindex">
 	<meta name="robots" content="nofollow">
-	
-	<meta property="og:title" content="ここにタイトル">
-	<meta property="og:type" content="ここにタイプ">
-	<meta property="og:url" content="ここにページのURL">
-	<meta property="og:image" content="ここにサムネイル画像のURL">
-	<meta property="og:site_name" content="ここにサイト名">
-	<meta property="og:description" content="ここにページのディスクリプション">
-	
-	<meta property="fb:app_id" content="App-ID（15文字の半角数字）">
-	
-	<meta name="twitter:card" content="summary">
-	<meta name="twitter:site" content="@Twitterアカウント">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>soThin</title>
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,900" rel="stylesheet">
@@ -53,11 +41,12 @@
 			<li><a class="navbar_link" href="https://haruharuharukichi.github.io/so-thin/">home</a></li>
 			<li><a class="navbar_link" href="https://haruharuharukichi.github.io/so-thin/naming">命名規則</a></li>
 			<li><a class="navbar_link" href="https://haruharuharukichi.github.io/so-thin/flow">全体の流れ</a></li>
+			<li><a class="navbar_link" href="https://haruharuharukichi.github.io/so-thin/install">WP入れ方</a></li>
 			<li><a class="navbar_link" href="https://haruharuharukichi.github.io/so-thin/function">function</a></li>
 			<li><a class="navbar_link" href="https://haruharuharukichi.github.io/so-thin/plugin">plugin</a></li>
 			<li><a class="navbar_link" href="https://haruharuharukichi.github.io/so-thin/material">素材</a></li>
 			<li><a class="navbar_link" href="https://haruharuharukichi.github.io/so-thin/salary">給与</a></li>
-			<li><a class="navbar_link" href="https://haruharuharukichi.github.io/so-thin/templates/">テンプレート</a></li>
+			<li><a class="navbar_link" href="https://haruharuharukichi.github.io/so-thin/templates/">テンプレ</a></li>
 			<li><a class="navbar_link" href="https://haruharuharukichi.github.io/so-thin/components/">コンポーネント</a></li>
 			<li><a class="navbar_link" href="https://haruharuharukichi.github.io/so-thin/academy/">草進ハイスクール</a></li>
 		</ul>
@@ -289,14 +278,16 @@ WEBサイト作成サービスsoThinです。<br />
 </blockquote>
 
 <p><h3>全体デザイン</h3>
-<p>トップページと同じように全体をコーディング。今後はローカルのWordPressでテーマごと編集</p>
+<p>トップページと同じように全体をコーディング。今後はWordPressでテーマごと編集</p>
+Xserverにログインして<a href="./flow">頑張る</a><br />
+パスワードは大体全部GitHubと同じ（自分で設定する場合は任意で良し）
 WordPressを最新版に更新してブロックエディタで編集するのを忘れずに</p>
 
 <p><strong>目的：コンバージョンを達成できる流れの作成</strong></p>
 
 <ol>
-<li>トップページの際にダウンロードしたテンプレートのWPバージョンにHTMLバージョンの変更を反映</li>
-<li>WPをローカル環境で起動し、テンプレートのWPフォルダをthemesにアップロード（フォルダ名からWPを削除するのを忘れずに）</li>
+<li>トップページの際にダウンロードしたテンプレのWPバージョンに変更を反映</li>
+<li>WPをサブディレクトリに入れて、テンプレートのWPフォルダをthemesにアップロード（フォルダ名からWPを削除するのを忘れずに）</li>
 <li>必要なPHPファイルを追加しつつ、固定ページを作成・編集</li>
 <li>ウィジェットやメニューを編集してサイト内で回遊できるようにする</li>
 <li>function.phpとプラグインを編集して必要な機能を追加</li>
@@ -306,15 +297,12 @@ WordPressを最新版に更新してブロックエディタで編集するの�
 アップロードする画像は1200×800px以上推奨（ヨコ1980pxが最適）</p>
 
 <p><h3>全体確認</h3>
-<p>ローカルのWordPressブラウザ出力結果をそれぞれHTMLとして保存し、githubページに追加し共有、変更希望があれば変更</p></p>
+開発環境のURL（ex. saw-so-thin.com/test）を見せて確認</p>
 
 <p><strong>目的：漏れがないかの確認</strong></p>
 
 <ol>
-<li>WordPressのページをそれぞれ表示し、ソースをHTMLとして保存（WordPressのページをHTMLに変換）</li>
-<li>HTML内のリンク等をローカルホストの絶対リンクから相対リンクに修正（そのままでは機能しない為）</li>
-<li>ファイルの読み込み、画像の表示、サイト内リンクが機能することを確認</li>
-<li>修正完了したファイル群をGitHub Pagesにアップロードし、クライアントに共有</li>
+<li>URLコピーして共有（これだけ）</li>
 </ol>
 
 <p>メッセージテンプレートはトップページのものを流用</p>
@@ -332,7 +320,8 @@ WordPressを最新版に更新してブロックエディタで編集するの�
 <li>左サイドバーの設定から「WP Maintenance Mode」を選択し、メンテナンスモードを有効にして保存</li>
 </ol>
 
-<p>wpフォルダなどを作成し、その中にWordPressをインストール（ルートディレクトリ以外に保存）した場合は以下も行う</p>
+<p>※必要に応じて<br />
+wpフォルダなどを作成し、その中にWordPressをインストール（ルートディレクトリ以外に保存）した場合は以下も行う</p>
 
 <ol>
 <li>設定→一般から「サイトアドレス（URL）」の/wpを削除し保存</li>
@@ -373,9 +362,7 @@ RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 
 <p><strong>目的：管理しやすいサイト作成</strong></p>
 
-<p>ローカル環境のページをコピペするだけなので、特記事項なし。<br />
-強いて言えばスラッグを英語にするのと、ブロックエディタで編集することくらい。
-ウィジェット、メニュー、ロゴなどの設定を忘れずに。</p>
+<p><a href="https://its-office.jp/blog/wordpress/2016/04/16/WP-Migration.html">All-in-One WP Migration</a>使うと便利</p>
 
 <p><h3>プラグイン導入</h3>
 <p>必要なプラグインを導入し設定</p></p>
