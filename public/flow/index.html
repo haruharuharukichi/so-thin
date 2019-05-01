@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="utf-8n">
+	<meta name="Description" CONTENT="ここにページのディスクリプション">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="Haruki Kawashita">
+	<meta name="robots" content="noindex">
+	<meta name="robots" content="nofollow">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>soThin</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,900" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+	
+	<script type="text/javascript" src="https://haruharuharukichi.github.io/so-thin/js/prettify.js"></script>
+	<link href="https://haruharuharukichi.github.io/so-thin/css/prettify.css" type="text/css" rel="stylesheet">
+
+	
+	<link rel="stylesheet" href="https://haruharuharukichi.github.io/so-thin/css/iota.css" />
+
+	<link rel="stylesheet" href="https://haruharuharukichi.github.io/so-thin/style.css">
+</head>
+
+<body onload="prettyPrint()">
+	<nav role="navigation" id="globalNavi" class="grid inline-center navbar_wrapper sticky">
+		<a href="https://haruharuharukichi.github.io/so-thin/" rel="home" class="flex navbar_brand">
+			<span class="navbar_logo">
+				LO<br>GO
+			</span>
+		</a>
+		<button type="button" id="navbarToggler" class="navbar_toggler">
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
+		<ul class="navbar_list font-sm">
+			<li><a class="navbar_link" href="https://haruharuharukichi.github.io/so-thin/">home</a></li>
+			<li><a class="navbar_link" href="https://haruharuharukichi.github.io/so-thin/todo">やりたいこと</a></li>
+			<li><a class="navbar_link" href="https://haruharuharukichi.github.io/so-thin/naming">命名規則</a></li>
+			<li><a class="navbar_link" href="https://haruharuharukichi.github.io/so-thin/flow">全体の流れ</a></li>
+			<li><a class="navbar_link" href="https://haruharuharukichi.github.io/so-thin/install">WP入れ方</a></li>
+			<li><a class="navbar_link" href="https://haruharuharukichi.github.io/so-thin/function">function</a></li>
+			<li><a class="navbar_link" href="https://haruharuharukichi.github.io/so-thin/plugin">plugin</a></li>
+			<li><a class="navbar_link" href="https://haruharuharukichi.github.io/so-thin/material">素材</a></li>
+			<li><a class="navbar_link" href="https://haruharuharukichi.github.io/so-thin/salary">給与</a></li>
+			<li><a class="navbar_link" href="https://haruharuharukichi.github.io/so-thin/templates/">テンプレ</a></li>
+			<li><a class="navbar_link" href="https://haruharuharukichi.github.io/so-thin/components/">コンポーネント</a></li>
+			<li><a class="navbar_link" href="https://haruharuharukichi.github.io/so-thin/academy/">草進ハイスクール</a></li>
+		</ul>
+	</nav>
+	<div class="grid body_wrapper">
+<aside role="complementary" class="sidebar_wrapper">
+    <h3>コンポーネント</h3>
+    
+    <ul>
+        
+        <li>
+            <a href="https://haruharuharukichi.github.io/so-thin/components/">TOP</a>
+        </li>
+        
+        <li>
+            <a href="https://haruharuharukichi.github.io/so-thin/components/button/">Button</a>
+        </li>
+        
+        <li>
+            <a href="https://haruharuharukichi.github.io/so-thin/components/card/">Card</a>
+        </li>
+        
+        <li>
+            <a href="https://haruharuharukichi.github.io/so-thin/components/form/">Form</a>
+        </li>
+        
+        <li>
+            <a href="https://haruharuharukichi.github.io/so-thin/components/grid/">Grid</a>
+        </li>
+        
+        <li>
+            <a href="https://haruharuharukichi.github.io/so-thin/components/header/">Header</a>
+        </li>
+        
+        <li>
+            <a href="https://haruharuharukichi.github.io/so-thin/components/navigation/">Navigation</a>
+        </li>
+        
+    </ul>
+    
+</aside>
+<aside role="complementary" class="sidebar_wrapper">
+    <div id="toc"></div>
+</aside>
+<main role="main">
+    
+
+<h1>制作の流れ</h1>
+
+<p><strong>クライアントの目的はWebサイトをつくることでなく、Webサイトによって何かを達成することです</strong><br />
+<strong>目的を達成できるサイトだけが「良いサイト」です</strong><br />
+常に目的（ゴール）を意識して、要求水準+αを達成できるよう考えましょう</p>
+
+<hr />
+
+<p><strong>※以下テンプレ等に出てくる【】は、中身を最適化してねという意味です。くれぐれも【】を残したままにしないようにしましょう</strong></p>
+
+<p><h2>営業請負会社担当</h2>
+<h3>受注</h3></p>
+
+<p>営業代行会社が案件をとってきます。<br>クライアント名・大まかなボリューム・金額がこちらに伝えられ制作担当者を決めます。</p>
+<h3>ヒアリング・画像のシェア</h3>
+<p>大まかにどのようなサイトを希望しているのかを代行会社がヒアリングし、その内容と画像等がGoogleドライブにシェアされます。<br>ヒアリング内容は以下の通りです。</p>
+<ul>
+    <li>概要</li>
+    <li>理念、思い</li>
+    <li>与えたいイメージ（クール、ロック、ポップ、ラグジュアリー等）</li>
+    <li>強み</li>
+    <li>何故サイトが欲しいのか</li>
+    <li>想定している大まかなページ構成</li>
+    <li>伝えたいメッセージ</li>
+    <li>ライバルサイト</li>
+    <li>好印象のサイトデザイン（具体例も）</li>
+    <li>ストーリー（何故立ち上げたのかなど）</li>
+</ul>
+<p></p>
+<h2>自社担当</h2>
+<h3>チャットワーク連絡</h3>
+
+<p>管理者がクライアントとチャットを繋ぎます</p>
+
+<p><strong>目的：流れの認知、制作者の保護</strong></p>
+
+<p>チャットワークにクライアントから連絡が来たら、クライアントに自動的に以下の連絡が送られます。<br></p>
+
+<blockquote>
+<p>ご申請いただきありがとうございます。<br />
+WEBサイト作成サービスsoThinです。<br />
+こちらのチャットワークアカウントでは、制作から納品までを主に担当させていただきます。</p>
+
+<p>制作の流れは以下の通りとなります。<br />
+1.  軽いヒアリングと概要の確認をさせていただきます<br />
+2.  サイトトップページのデザイン案を作成します（フェーズ1）<br />
+3.  トップページにあわせてサイト全体のデザインを作成します（フェーズ2）<br />
+4.  サーバーを用意していただき、WordPressをインストールしサイトを構築・納品します（フェーズ3）</p>
+
+<p>各フェーズでは、1回につき１つのデザイン又は成果物を見ていただきます（一度に複数お見せし、その中から選んでいただくという形式はとりません）。<br />
+気に入っていただいた時点で次のフェーズに移行しますが、変更を希望する部分がある場合は変更依頼を出すことが出来ます。その場合は、該当フェーズを繰り返しとなります。<br />
+各フェーズの作業期間は1回あたり5営業日を目安としてお考え下さい。</p>
+
+<p>誠に勝手ながら、フェーズの変更依頼は各3回まで、お客様からのご質問は計10回までとさせていただき、超過分は追加料金をお支払いいただきます。<br />
+以前の事例をもとに担当者の保護を目的につくられた制限ですので、何卒ご理解とご協力を宜しくお願い致します。</p>
+
+<p>より良いサイトを作成出来る様尽力いたしますので、ご協力いただけますと幸いです。<br />
+後程制作担当者をこのグループに追加いたしますので、今しばらくお待ちください。</p>
+</blockquote>
+
+<p>送信後、管理者が担当者をグループに招待します。</p>
+
+<p><h3>ヒアリング（ここから担当者が行う）</h3>
+<p>詳細をヒアリングし、ページ概要を確認</p></p>
+
+<p><strong>目的：サイトイメージの共有、制作に必要な材料の確保、信頼と評価の獲得</strong></p>
+
+<p>事前にGoogleドライブに共有されている内容を参考に概要を把握しておく。<br />
+挨拶と同時に、方向性と追加で必要な内容を確認・質問する。<br />
+質問の際は、<strong>サイト作成の目的や誰がどんな目的で閲覧するのかを明らかにするように</strong>。<br />
+依頼者と製作者が考えている、「良いサイト」のイメージを統一出来るのが良い質問です。</p>
+
+<hr />
+
+<p>質問ばかりだと嫌がるクライアントもいる為、<strong>なるべく提案や確認を混ぜて</strong>歩み寄る姿勢を見せましょう</p>
+
+<p>以下テンプレート<br />
+【】を入れ替え、質問数は必要に応じて変化させて使用</p>
+
+<blockquote>
+<p>この度WEBサイトの制作を担当させていただくこととなりました、【名前】です。<br />
+よろしくお願いします！</p>
+
+<p>早速作成に移りたいのですが、その前にいくつか軽いヒアリングをさせていただきたいと考えております。<br />
+【相手の名前】様の考えをより深く知ることで、見る人の心に残るWEBサイトを作りたいからです。<br />
+お手数おかけしますが、ご協力お願いします！</p>
+
+<p>お聞きしたい項目は以下の通りです。<br />
+1. 【質問１ ex. 色について　前回のヒアリングを確認したところ、クールな美容室といったイメージを持ちました。コンセプトカラーは濃紫に近い青が良いかと考えたのですが、如何でしょうか？】<br />
+2. 【質問２ ex. ユーザー層　概要から、メインユーザー層は30代女性あたりかと感じました。特にアピールしたい層はございますか？】<br />
+3. 【質問３ ex. リンク　サイトにリンクを表示したいSNSアカウントや外部サイトなどはございますか？】<br />
+4. 【質問４ ex. アクセス元　サイトへのアクセスのメインはInstagramと考えて宜しいでしょうか？】<br />
+5. IEは対象範囲から除外して良いか</p>
+
+<ul>
+<li>補足：許可していただけると、IEでサイトの閲覧ができなくなる代わりにデザインの自由度とサイトの速度が改善します。尚、IEの利用者数は減少傾向にあり、提供元のMicrosoftが2020年4月までにサポートを終了する旨を既に告知しているため今後使用はされなくなります。ITリテラシーが高い層、若い層にアプローチする場合はIEの必要性は低くなります。許可していただいた場合でも、万が一IEでサイトにアクセスされた場合はChromeなどに誘導する文言を表示します。</li>
+</ul>
+
+<p>総合的に考えて、【方向性】の方向で作成しようと考えておりますが、いかがでしょうか？<br />
+質問ばかりで申し訳ございませんが、お手すきの際にご回答お願い致します！</p>
+</blockquote>
+
+<p>例えば以下の項目を使用しましょう。</p>
+
+<ul>
+<li>WEBサイトの立ち位置（メインなのか、SNSの補助なのか等）</li>
+<li>サイトに期待する役割</li>
+<li>メインターゲット、サブターゲット</li>
+<li>コンセプトカラー</li>
+<li>ユーザーはどこからサイトにアクセスしてくるか</li>
+<li>何の機能が欲しいか（ブログ、フォーム等）</li>
+<li>SNSアカウント</li>
+<li>インターネットエクスプローラーをサポート範囲から除外して良いか
+
+<ul>
+<li>補足：許可していただけると、IEでサイトの閲覧ができなくなる代わりにデザインの自由度とサイトの速度が改善します。尚、IEの利用者数は減少傾向にあり、提供元のMicrosoftが2020年4月までにサポートを終了する旨を既に告知しているため今後使用はされなくなります。ITリテラシーが高い層、若い層にアプローチする場合はIEの必要性は低くなります。許可していただいた場合でも、万が一IEでサイトにアクセスされた場合はChromeなどに誘導する文言を表示します。</li>
+</ul></li>
+</ul>
+
+<h3 id="サイトマップ作成">サイトマップ作成</h3>
+
+<p>ヒアリング後、サイトマップを作成し共有<br />
+その際に、「こんなアプローチでこんな感じのサイト作る」という方針を共有すると好印象<br />
+サイトマップはマインドマップにて作成、完成したらPDFに変換して共有<br />
+<a href="../images/sitemap.xmind">テンプレートをダウンロードする</a></p>
+
+<ol>
+<li><a href="http://jp.xmind.net/download/">公式サイト</a>よりxmindをDLインストールした上で、上記テンプレートをダウンロードし開く</li>
+<li>必要箇所を修正・追加・削除する。（名前はダブルクリックで編集可能、その他機能は右クリック）</li>
+<li>ユーザービリティを考慮しページ数はなるべく少なくする</li>
+<li>セクションが複数ページにまたがる場合（サービスページの下層にページを追加する場合など）は囲いを使ってくくる</li>
+<li>【】が全部消えていることを確認</li>
+<li>見栄えが良くなるように配置を修正</li>
+<li>印刷から、仮想印刷ソフトかadobe PDFを使ってPDFに変換（分からなければ「xmind pdf」で検索）</li>
+</ol>
+
+<p><h3>トップページデザイン</h3>
+<p>サイトにあったテンプレートを選定し、コンポーネントを使ってトップページ（ホームページ）をHTMLでコーディング</p></p>
+
+<p><strong>目的：デザインの方向性の決定、強い第一印象を与えること</strong></p>
+
+<ol>
+<li>トップページに表示するコンテンツと流れを整理し、構造と方向性を決める</li>
+<li>Googleドライブのtmeplates&gt;利用するテンプレートのフォルダをローカルにダウンロード（自作する場合はtemplates&gt;base）</li>
+<li>HTMLフォルダを開き、index.htmlに当サイトナビゲーションのコンポーネントから必要な要素をコピペ</li>
+<li>命名規則に従い必要部分のレイアウトをカスタマイズ</li>
+<li>アニメーションを追加</li>
+</ol>
+
+<p><h3>トップページ確認</h3>
+<p>githubページでトップページをクライアントに共有、変更希望があれば変更し共有</p></p>
+
+<p><strong>目的：方向性が要求に合っているかの確認</strong></p>
+
+<ol>
+<li><a href="https://github.com">https://github.com</a> にログイン(ID,passはチャットワークで送付)</li>
+<li>顧客名で新しくリポジトリを作成（READEMEで初期化にチェックを入れる）</li>
+<li>リポジトリの「Upload files」からカスタマイズしたHTMLを裸でアップロード</li>
+<li>Settingからスクロールして出てくる「GitHub Pages」の「Source」から＜master branch＞を選択（GitHub Pagesを作成する）</li>
+<li>出てくる<a href="https://soThin.github.io/クライアント名/">https://soThin.github.io/クライアント名/</a> 形式のURLをコピーしてチャットワークに送信</li>
+</ol>
+
+<p>以下テンプレート</p>
+
+<blockquote>
+<p>大変お待たせ致しました！<br />
+【作業内容】完了致しましたので、ご確認をお願い致します。</p>
+
+<p>以下URLよりアクセスできます。<br />
+【成果物URL】</p>
+
+<p>今回は以下のような思想で作成させていただきました。<br />
+【設計・制作思想 ex.メインユーザーは20代女性でアクセスはスマホがメインと想定されるので、スマホファーストのレイアウトにしました】</p>
+
+<p>尚、以下の点にご注意ください。<br />
+【注意事項　ex.現時点ではIEに対応させていない為、ChromeやFirefoxなどのモダンブラウザでご覧ください】</p>
+
+<p>ご確認後、気に入っていただけましたら次のフェーズに移らせていただきます。<br />
+変更希望やデザインの方向性を変えてほしいという場合は、その旨ご連絡ください。</p>
+
+<p>お返事お待ちしております！</p>
+</blockquote>
+
+<p><h3>全体デザイン</h3>
+<p>トップページと同じように全体をコーディング。今後はWordPressでテーマごと編集</p>
+Xserverにログインして<a href="./flow">頑張る</a><br />
+パスワードは大体全部GitHubと同じ（自分で設定する場合は任意で良し）
+WordPressを最新版に更新してブロックエディタで編集するのを忘れずに</p>
+
+<p><strong>目的：コンバージョンを達成できる流れの作成</strong></p>
+
+<ol>
+<li>トップページの際にダウンロードしたテンプレのWPバージョンに変更を反映</li>
+<li>WPをサブディレクトリに入れて、テンプレートのWPフォルダをthemesにアップロード（フォルダ名からWPを削除するのを忘れずに）</li>
+<li>必要なPHPファイルを追加しつつ、固定ページを作成・編集</li>
+<li>ウィジェットやメニューを編集してサイト内で回遊できるようにする</li>
+<li>function.phpとプラグインを編集して必要な機能を追加</li>
+</ol>
+
+<p>screenshot.pngの画像サイズは880×660px必須<br />
+アップロードする画像は1200×800px以上推奨（ヨコ1980pxが最適）</p>
+
+<p><h3>全体確認</h3>
+開発環境のURL（ex. saw-so-thin.com/test）を見せて確認</p>
+
+<p><strong>目的：漏れがないかの確認</strong></p>
+
+<ol>
+<li>URLコピーして共有（これだけ）</li>
+</ol>
+
+<p>メッセージテンプレートはトップページのものを流用</p>
+
+<p><h3>WordPress導入</h3>
+<p>サーバー情報を貰いコントロールパネルからログインし、WordPressを導入、メンテナンスモードを有効化。リニューアルの場合は飛ばす</p>
+ファイルの編集にはCyberDuckを使うと楽</p>
+
+<p><strong>目的：構築の準備</strong></p>
+
+<ol>
+<li>サーバー情報（ログインページ、ＩＤ，パス）を貰い、サーバーにログイン</li>
+<li>WordPressをインストールし、IDをクライアント名、パスをサーバーパスワードに設定</li>
+<li>プラグインの新規追加から「WP Maintenance Mode」を検索し有効化</li>
+<li>左サイドバーの設定から「WP Maintenance Mode」を選択し、メンテナンスモードを有効にして保存</li>
+</ol>
+
+<p>※必要に応じて<br />
+wpフォルダなどを作成し、その中にWordPressをインストール（ルートディレクトリ以外に保存）した場合は以下も行う</p>
+
+<ol>
+<li>設定→一般から「サイトアドレス（URL）」の/wpを削除し保存</li>
+<li>FTPにログインし、wpフォルダ内にある＜index.php＞と＜.htaccess＞をダウンロード</li>
+<li>＜index.php＞17行目にある<code>require(‘./wp-blog-header.php’);</code>を<code>require(‘./wp/wp-blog-header.php’);</code>に変更</li>
+<li>ルートディレクトリに＜index.php＞と＜.htaccess＞をアップロード</li>
+<li>WordPressの設定→パーマリンク設定に行き、保存ボタンをクリック</li>
+<li>ログインした状態でサイトドメインにアクセスし、正常に稼働していることを確認</li>
+</ol>
+
+<p>WordPressを導入し、ログインしても「まだホームページがアップロードされていません」などを表示される場合は、FTPを使いルートディレクトリにあるindex.htmlを削除</p>
+
+<p><h3>SSL導入</h3>
+<p>必要に応じてSSLを導入</p></p>
+
+<p><strong>目的：SEO対策強化</strong></p>
+
+<ol>
+<li>サーバー管理画面から無料独自SSLを導入</li>
+<li>サーバーのSSL設定が完了したらWordPressの設定→一般設定から2種類のURLの<code>http://~</code>から<code>https://~</code>に変更、保存</li>
+
+<li><p>FTPからログインし、ルートディレクトリにある.htaccessの先頭に以下を追加</p>
+
+<pre><code>&lt;IfModule mod_rewrite.c&gt;
+RewriteEngine on
+RewriteCond %{HTTPS} !=on [NC]
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+&lt;/IfModule&gt;
+</code></pre></li>
+
+<li><p>http://~ でサイトにアクセスしてみてリダイレクトが利いていることを確認する。下層ページでも同じく確認</p></li>
+
+<li><p>URLの左に南京錠マークがついていることを確認する。ついてない場合は内部URLにhttp://~ がある証拠なので修正</p></li>
+</ol>
+
+<p><h3>ページ構築</h3>
+<p>作成したテーマをWordPressにアップロードし、ページなどを構築</p></p>
+
+<p><strong>目的：管理しやすいサイト作成</strong></p>
+
+<p><a href="https://its-office.jp/blog/wordpress/2016/04/16/WP-Migration.html">All-in-One WP Migration</a>使うと便利</p>
+
+<p><h3>プラグイン導入</h3>
+<p>必要なプラグインを導入し設定</p></p>
+
+<p><strong>目的：サービスすることで１２０点の評価をもらう</strong></p>
+
+<p>詳細はプラグインページへ
+「SiteGuard WP Plugin」はまだ入れない点に注意</p>
+
+<p><h3>確認</h3>
+<p>クライアントにWordPressのログイン情報を伝え、確認して貰う。変更希望があれば変更し共有</p></p>
+
+<p><strong>目的：最終確認</strong></p>
+
+<ol>
+<li>一通りサイトを回遊し、全てのリンクと画像が機能していること、誤字脱字が無いことを確認する。</li>
+<li>WordPressのログインページURL,ID,パスを伝え、ログインして確認して貰う（メンテナンスモードが利いているのでログインしないと見れない点に注意）</li>
+<li>OKが出たらメンテナンスモードを解除し、「SiteGuard WP Plugin」を導入</li>
+</ol>
+
+<p><h3>納品完了</h3>
+<p>問題なければ終了。終了報告をし、作成したフォルダをGoogleドライブのproductフォルダにアップロード</p></p>
+
+<p><strong>目的：素晴らしいサイトを作った上に、+αのサービスもしたというアピール（料金以上の価値があると暗に伝える）</strong></p>
+
+<ol>
+<li>制作と確認が全て終了し、問題が無ければ管理者に終了報告をし、クライアントには以下文章を投下</li>
+</ol>
+
+<blockquote>
+<p>ご確認有難うございます。<br />
+これにて制作は終了となります。<br />
+ご協力いただいたお陰でスムーズにサイトを作成する事が出来ました。<br />
+有難うございます。</p>
+
+<p>管理ページへのログインURLは<br />
+【ログインURL】<br />
+IDは<br />
+【WordPress ID】<br />
+パスワードは<br />
+【WordPressパスワード】<br />
+となります。<br />
+失念しないようお気を付けください。</p>
+
+<p>尚、経験上安全で簡単なサイト運営や強力なSEO対策を行うために必要だと考えらえるプラグインを導入・設定しておきました。<br />
+制作へのご協力のお礼としてお受け取りいただけますと幸いです。</p>
+
+<p>差し出がましいかとは思いますが、WordPressの使い方に関しては以下サイトが参考になります（外部サイトです）。<br />
+<a href="https://techacademy.jp/magazine/11085">https://techacademy.jp/magazine/11085</a><br />
+<a href="https://lolipop.jp/manual/hp/wordpress-lecture/">https://lolipop.jp/manual/hp/wordpress-lecture/</a><br />
+<a href="https://webdesign-trends.net/entry/8353">https://webdesign-trends.net/entry/8353</a></p>
+
+<p>当アカウントでは制作までの対応となりますので、料金の支払い等に関しましては、Lunaim窓口との御連絡をお願い致します。</p>
+</blockquote>
+
+<h2 id="変更依頼">変更依頼</h2>
+
+<h3 id="受付">受付</h3>
+
+<blockquote>
+<p>ご確認有難うございます。<br />
+変更希望承知いたしました。</p>
+
+<p>【変更希望内容】にあわせて再度作成致しますので、しばらくお待ちください。<br />
+尚、仕様上実装できない機能や配置などもございますのでその点ご了承ください。</p>
+
+<p>変更が完了次第また連絡させていただきます。<br />
+変更には5営業日ほど戴くことも御座いますので、ご了承ください。<br />
+よろしくお願いします。</p>
+</blockquote>
+
+<h3 id="変更完了">変更完了</h3>
+
+<blockquote>
+<p>大変お待たせ致しました！<br />
+変更が完了致しました。<br />
+以下URLより閲覧できます。<br />
+【URL】</p>
+
+<p>今回の変更点は<br />
+【変更内容】<br />
+となります。</p>
+
+<p>尚、【変更希望内容】は反映されておりません。<br />
+【変更しなかった理由】の点を考慮したためですので、ご了承ください。</p>
+
+<p>ご確認お願いします！</p>
+</blockquote>
+
+<h2 id="チャットワークに間違った文章を送ったら">チャットワークに間違った文章を送ったら</h2>
+
+<p>焦らずに、送った文章の右下にある「編集」をクリックし、適切な文章に直しましょう。<br />
+間違えて送信した（送信自体が間違い）の場合は、同位置にある「&hellip;」をクリックし、削除した上で間違いである旨の謝罪をクライアントに連絡しましょう。</p>
+
+</main>
+<footer role="contentinfo" class="inline-center footer_wrapper">@2019~ haruki kawashita</footer>
+</div>
+<script type='text/javascript' src='https://haruharuharukichi.github.io/so-thin/js/toc.min.js'></script>
+<script type='text/javascript' src='https://haruharuharukichi.github.io/so-thin/js/main.js'></script>
+</body>
+
+</html>
